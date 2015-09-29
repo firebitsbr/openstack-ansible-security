@@ -25,6 +25,8 @@
     - cat1
     - V-38497
 
+# Print a warning about making a change.  We ought to figure out a better way
+# to capture this later.
 - name: V-38497 - The system must not have accounts configured with blank or null passwords.
   debug:
     msg: "FAILED: Remove 'nullok' from /etc/pam.d/system-auth for better security."
