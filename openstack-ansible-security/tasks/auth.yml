@@ -21,7 +21,7 @@
   register: v38497_result
   failed_when: "'No such file' in v38497_result.stderr"
   tags:
-    - ssh
+    - auth
     - cat1
     - V-38497
 
@@ -32,6 +32,6 @@
     msg: "FAILED: Remove 'nullok' from /etc/pam.d/system-auth for better security."
   when: "v38497_result.rc == 0"
   tags:
-    - ssh
+    - auth
     - cat1
     - V-38497
