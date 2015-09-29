@@ -13,6 +13,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-  - include: apt.yml
-  - include: auth.yml
-  - include: sshd.yml
+- name: Gather current GPG keys for apt (for V-38476)
+  command: apt-key list
+  register: v38476_result
+
+- name: V-38476 - Vendor-provided cryptographic certificates must be installed to verify the integrity of system software.
+  debug:
+    msg: "FAILED: Missing Ubuntu 14.04 Archive signing keys"
+  when: "'437D05B5' not in v38476_result.stdout or 'C0B21F32' not in v38476_result.stdout"
+  tags:
+    - apt
+    - cat1
+    - V-38476
