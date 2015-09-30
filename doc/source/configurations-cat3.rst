@@ -20,8 +20,7 @@ Details: `V-38653 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38653.rst
 
 V-38666: The system must use and update a DoD-approved virus scan program.
 --------------------------------------------------------------------------
@@ -35,8 +34,7 @@ Details: `V-38666 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38666.rst
 
 V-38668: The x86 Ctrl-Alt-Delete key sequence must be disabled.
 ---------------------------------------------------------------
@@ -54,8 +52,7 @@ Details: `V-38668 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38668.rst
 
 V-38462: The RPM package management tool must cryptographically verify the authenticity of all software packages during installation.
 -------------------------------------------------------------------------------------------------------------------------------------
@@ -70,8 +67,7 @@ Details: `V-38462 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38462.rst
 
 V-38497: The system must not have accounts configured with blank or null passwords.
 -----------------------------------------------------------------------------------
@@ -86,8 +82,7 @@ Details: `V-38497 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38497.rst
 
 V-38677: The NFS server must not have the insecure file locking option enabled.
 -------------------------------------------------------------------------------
@@ -101,8 +96,7 @@ Details: `V-38677 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38677.rst
 
 V-38476: Vendor-provided cryptographic certificates must be installed to verify the integrity of system software.
 -----------------------------------------------------------------------------------------------------------------
@@ -116,8 +110,7 @@ Details: `V-38476 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38476.rst
 
 V-38491: There must be no .rhosts or hosts.equiv files on the system.
 ---------------------------------------------------------------------
@@ -131,8 +124,7 @@ Details: `V-38491 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38491.rst
 
 V-38607: The SSH daemon must be configured to use only the SSHv2 protocol.
 --------------------------------------------------------------------------
@@ -146,8 +138,7 @@ Details: `V-38607 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38607.rst
 
 V-38602: The rlogind service must not be running.
 -------------------------------------------------
@@ -162,8 +153,7 @@ Details: `V-38602 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38602.rst
 
 V-38594: The rshd service must not be running.
 ----------------------------------------------
@@ -178,8 +168,7 @@ Details: `V-38594 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38594.rst
 
 V-38591: The rsh-server package must not be installed.
 ------------------------------------------------------
@@ -194,8 +183,7 @@ Details: `V-38591 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38591.rst
 
 V-38598: The rexecd service must not be running.
 ------------------------------------------------
@@ -210,8 +198,7 @@ Details: `V-38598 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38598.rst
 
 V-38587: The telnet-server package must not be installed.
 ---------------------------------------------------------
@@ -228,8 +215,7 @@ Details: `V-38587 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38587.rst
 
 V-38589: The telnet daemon must not be running.
 -----------------------------------------------
@@ -248,8 +234,7 @@ Details: `V-38589 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38589.rst
 
 V-38701: The TFTP daemon must operate in secure mode which provides access only to a single directory on the host file system.
 ------------------------------------------------------------------------------------------------------------------------------
@@ -264,8 +249,7 @@ Details: `V-38701 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38701.rst
 
 V-38614: The SSH daemon must not allow authentication using an empty password.
 ------------------------------------------------------------------------------
@@ -280,5 +264,4 @@ Details: `V-38614 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38614.rst

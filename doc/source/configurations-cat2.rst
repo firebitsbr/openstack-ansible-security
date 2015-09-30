@@ -20,8 +20,7 @@ Details: `V-38612 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38612.rst
 
 V-38580: The audit system must be configured to audit the loading and unloading of dynamic kernel modules.
 ----------------------------------------------------------------------------------------------------------
@@ -37,8 +36,7 @@ Details: `V-38580 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38580.rst
 
 V-38459: The /etc/group file must be group-owned by root.
 ---------------------------------------------------------
@@ -53,8 +51,7 @@ Details: `V-38459 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38459.rst
 
 V-38643: There must be no world-writable files on the system.
 -------------------------------------------------------------
@@ -70,8 +67,7 @@ Details: `V-38643 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38643.rst
 
 V-38551: The operating system must connect to external networks or information systems only through managed IPv6 interfaces consisting of boundary protection devices arranged in accordance with an organizational security architecture.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -85,8 +81,7 @@ Details: `V-38551 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38551.rst
 
 V-51363: The system must use a Linux Security Module configured to enforce limits on system services.
 -----------------------------------------------------------------------------------------------------
@@ -102,8 +97,7 @@ Details: `V-51363 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-51363.rst
 
 V-38499: The /etc/passwd file must not contain password hashes.
 ---------------------------------------------------------------
@@ -117,8 +111,7 @@ Details: `V-38499 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38499.rst
 
 V-38450: The /etc/passwd file must be owned by root.
 ----------------------------------------------------
@@ -133,8 +126,7 @@ Details: `V-38450 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38450.rst
 
 V-38581: The system boot loader configuration file(s) must be group-owned by root.
 ----------------------------------------------------------------------------------
@@ -148,8 +140,7 @@ Details: `V-38581 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38581.rst
 
 V-38451: The /etc/passwd file must be group-owned by root.
 ----------------------------------------------------------
@@ -164,8 +155,7 @@ Details: `V-38451 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38451.rst
 
 V-38458: The /etc/group file must be owned by root.
 ---------------------------------------------------
@@ -180,8 +170,7 @@ Details: `V-38458 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38458.rst
 
 V-38658: The system must prohibit the reuse of passwords within twenty-four iterations.
 ---------------------------------------------------------------------------------------
@@ -195,8 +184,7 @@ Details: `V-38658 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38658.rst
 
 V-38582: The xinetd service must be disabled if no network services utilizing it are enabled.
 ---------------------------------------------------------------------------------------------
@@ -212,8 +200,7 @@ Details: `V-38582 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38582.rst
 
 V-38652: Remote file systems must be mounted with the nodev option.
 -------------------------------------------------------------------
@@ -227,8 +214,7 @@ Details: `V-38652 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38652.rst
 
 V-38654: Remote file systems must be mounted with the nosuid option.
 --------------------------------------------------------------------
@@ -243,8 +229,7 @@ Details: `V-38654 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38654.rst
 
 V-38490: The operating system must enforce requirements for the connection of mobile devices to operating systems.
 ------------------------------------------------------------------------------------------------------------------
@@ -259,8 +244,7 @@ Details: `V-38490 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38490.rst
 
 V-38443: The /etc/gshadow file must be owned by root.
 -----------------------------------------------------
@@ -274,8 +258,7 @@ Details: `V-38443 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38443.rst
 
 V-38526: The system must not accept ICMPv4 secure redirect packets on any interface.
 ------------------------------------------------------------------------------------
@@ -290,8 +273,7 @@ Details: `V-38526 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38526.rst
 
 V-38524: The system must not accept ICMPv4 redirect packets on any interface.
 -----------------------------------------------------------------------------
@@ -305,8 +287,7 @@ Details: `V-38524 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38524.rst
 
 V-38488: The operating system must conduct backups of user-level information contained in the operating system per organization defined frequency to conduct backups consistent with recovery time and recovery point objectives.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -322,8 +303,7 @@ Details: `V-38488 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38488.rst
 
 V-38520: The operating system must back up audit records on an organization defined frequency onto a different system or media than the system being audited.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -340,8 +320,7 @@ Details: `V-38520 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38520.rst
 
 V-38521: The operating system must support the requirement to centrally manage the content of audit records generated by organization defined information system components.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -358,8 +337,7 @@ Details: `V-38521 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38521.rst
 
 V-38484: The operating system, upon successful logon, must display to the user the date and time of the last logon or access via ssh.
 -------------------------------------------------------------------------------------------------------------------------------------
@@ -376,8 +354,7 @@ Details: `V-38484 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38484.rst
 
 V-38486: The operating system must conduct backups of system-level information contained in the information system per organization defined frequency to conduct backups that are consistent with recovery time and recovery point objectives.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -393,8 +370,7 @@ Details: `V-38486 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38486.rst
 
 V-38481: System security patches and updates must be installed and up-to-date.
 ------------------------------------------------------------------------------
@@ -408,8 +384,7 @@ Details: `V-38481 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38481.rst
 
 V-38529: The system must not accept IPv4 source-routed packets by default.
 --------------------------------------------------------------------------
@@ -423,8 +398,7 @@ Details: `V-38529 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38529.rst
 
 V-38665: The system package management tool must verify group-ownership on all files and directories associated with the audit package.
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -440,8 +414,7 @@ Details: `V-38665 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38665.rst
 
 V-38664: The system package management tool must verify ownership on all files and directories associated with the audit package.
 ---------------------------------------------------------------------------------------------------------------------------------
@@ -457,8 +430,7 @@ Details: `V-38664 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38664.rst
 
 V-38667: The system must have a host-based intrusion detection tool installed.
 ------------------------------------------------------------------------------
@@ -475,8 +447,7 @@ Details: `V-38667 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38667.rst
 
 V-38660: The snmpd service must use only SNMP protocol version 3 or newer.
 --------------------------------------------------------------------------
@@ -490,8 +461,7 @@ Details: `V-38660 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38660.rst
 
 V-38663: The system package management tool must verify permissions on all files and directories associated with the audit package.
 -----------------------------------------------------------------------------------------------------------------------------------
@@ -507,8 +477,7 @@ Details: `V-38663 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38663.rst
 
 V-38446: The mail system must forward all mail for root to one or more system administrators.
 ---------------------------------------------------------------------------------------------
@@ -523,8 +492,7 @@ Details: `V-38446 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38446.rst
 
 V-38466: Library files must be owned by root.
 ---------------------------------------------
@@ -539,8 +507,7 @@ Details: `V-38466 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38466.rst
 
 V-38465: Library files must have mode 0755 or less permissive.
 --------------------------------------------------------------
@@ -555,8 +522,7 @@ Details: `V-38465 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38465.rst
 
 V-38464: The audit system must take appropriate action when there are disk errors on the audit storage volume.
 --------------------------------------------------------------------------------------------------------------
@@ -570,8 +536,7 @@ Details: `V-38464 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38464.rst
 
 V-38461: The /etc/group file must have mode 0644 or less permissive.
 --------------------------------------------------------------------
@@ -586,8 +551,7 @@ Details: `V-38461 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38461.rst
 
 V-38492: The system must prevent the root account from logging in from virtual consoles.
 ----------------------------------------------------------------------------------------
@@ -601,8 +565,7 @@ Details: `V-38492 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38492.rst
 
 V-38469: All system command files must have mode 755 or less permissive.
 ------------------------------------------------------------------------
@@ -617,8 +580,7 @@ Details: `V-38469 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38469.rst
 
 V-38468: The audit system must take appropriate action when the audit storage volume is full.
 ---------------------------------------------------------------------------------------------
@@ -632,8 +594,7 @@ Details: `V-38468 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38468.rst
 
 V-38553: The operating system must prevent public IPv6 access into an organizations internal networks, except as appropriately mediated by managed interfaces employing boundary protection devices.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -647,8 +608,7 @@ Details: `V-38553 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38553.rst
 
 V-38498: Audit log files must have mode 0640 or less permissive.
 ----------------------------------------------------------------
@@ -661,8 +621,7 @@ Details: `V-38498 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38498.rst
 
 V-38555: The system must employ a local IPv4 firewall.
 ------------------------------------------------------
@@ -676,8 +635,7 @@ Details: `V-38555 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38555.rst
 
 V-51875: The operating system, upon successful logon/access, must display to the user the number of unsuccessful logon/access attempts since the last successful logon/access.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -694,8 +652,7 @@ Details: `V-51875 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-51875.rst
 
 V-38493: Audit log directories must have mode 0755 or less permissive.
 ----------------------------------------------------------------------
@@ -708,8 +665,7 @@ Details: `V-38493 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38493.rst
 
 V-38496: Default operating system accounts, other than root, must be locked.
 ----------------------------------------------------------------------------
@@ -723,8 +679,7 @@ Details: `V-38496 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38496.rst
 
 V-38523: The system must not accept IPv4 source-routed packets on any interface.
 --------------------------------------------------------------------------------
@@ -738,8 +693,7 @@ Details: `V-38523 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38523.rst
 
 V-38673: The operating system must ensure unauthorized, security-relevant configuration changes detected are tracked.
 ---------------------------------------------------------------------------------------------------------------------
@@ -753,8 +707,7 @@ Details: `V-38673 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38673.rst
 
 V-38670: The operating system must detect unauthorized changes to software and information. 
 --------------------------------------------------------------------------------------------
@@ -768,8 +721,7 @@ Details: `V-38670 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38670.rst
 
 V-38671: The sendmail package must be removed.
 ----------------------------------------------
@@ -784,8 +736,7 @@ Details: `V-38671 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38671.rst
 
 V-38674: X Windows must not be enabled unless required.
 -------------------------------------------------------
@@ -799,8 +750,7 @@ Details: `V-38674 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38674.rst
 
 V-38630: The graphical desktop environment must automatically lock after 15 minutes of inactivity and the system must require user reauthentication to unlock the environment.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -817,8 +767,7 @@ Details: `V-38630 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38630.rst
 
 V-38678: The audit system must provide a warning when allocated audit record storage volume reaches a documented percentage of maximum audit record storage capacity.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -832,8 +781,7 @@ Details: `V-38678 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38678.rst
 
 V-58901: The sudo command must require authentication.
 ------------------------------------------------------
@@ -852,8 +800,7 @@ Details: `V-58901 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-58901.rst
 
 V-38475: The system must require passwords to contain a minimum of 14 characters.
 ---------------------------------------------------------------------------------
@@ -872,8 +819,7 @@ Details: `V-38475 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38475.rst
 
 V-38477: Users must not be able to change passwords more than once every 24 hours.
 ----------------------------------------------------------------------------------
@@ -887,8 +833,7 @@ Details: `V-38477 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38477.rst
 
 V-38470: The audit system must alert designated staff members when the audit storage volume approaches capacity.
 ----------------------------------------------------------------------------------------------------------------
@@ -902,8 +847,7 @@ Details: `V-38470 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38470.rst
 
 V-38679: The DHCP client must be disabled if not needed.
 --------------------------------------------------------
@@ -919,8 +863,7 @@ Details: `V-38679 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38679.rst
 
 V-38479: User passwords must be changed at least every 60 days.
 ---------------------------------------------------------------
@@ -937,8 +880,7 @@ Details: `V-38479 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38479.rst
 
 V-54381: The audit system must switch the system to single-user mode when available audit storage volume becomes dangerously low.
 ---------------------------------------------------------------------------------------------------------------------------------
@@ -953,8 +895,7 @@ Details: `V-54381 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-54381.rst
 
 V-38445: Audit log files must be group-owned by root.
 -----------------------------------------------------
@@ -968,8 +909,7 @@ Details: `V-38445 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38445.rst
 
 V-38542: The system must use a reverse-path filter for IPv4 network traffic when possible on all interfaces.
 ------------------------------------------------------------------------------------------------------------
@@ -985,8 +925,7 @@ Details: `V-38542 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38542.rst
 
 V-38544: The system must use a reverse-path filter for IPv4 network traffic when possible by default.
 -----------------------------------------------------------------------------------------------------
@@ -1002,8 +941,7 @@ Details: `V-38544 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38544.rst
 
 V-38546: The IPv6 protocol handler must not be bound to the network stack unless needed.
 ----------------------------------------------------------------------------------------
@@ -1017,8 +955,7 @@ Details: `V-38546 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38546.rst
 
 V-38548: The system must ignore ICMPv6 redirects by default.
 ------------------------------------------------------------
@@ -1031,8 +968,7 @@ Details: `V-38548 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38548.rst
 
 V-38549: The system must employ a local IPv6 firewall.
 ------------------------------------------------------
@@ -1046,8 +982,7 @@ Details: `V-38549 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38549.rst
 
 V-38472: All system command files must be owned by root.
 --------------------------------------------------------
@@ -1062,8 +997,7 @@ Details: `V-38472 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38472.rst
 
 V-38689: The Department of Defense (DoD) login banner must be displayed immediately prior to, or as part of, graphical desktop environment login prompts.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1077,8 +1011,7 @@ Details: `V-38689 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38689.rst
 
 V-38688: A login banner must be displayed immediately prior to, or as part of, graphical desktop environment login prompts.
 ---------------------------------------------------------------------------------------------------------------------------
@@ -1092,8 +1025,7 @@ Details: `V-38688 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38688.rst
 
 V-38686: The systems local firewall must implement a deny-all, allow-by-exception policy for forwarded packets.
 ---------------------------------------------------------------------------------------------------------------
@@ -1109,8 +1041,7 @@ Details: `V-38686 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38686.rst
 
 V-38682: The Bluetooth kernel module must be disabled.
 ------------------------------------------------------
@@ -1125,8 +1056,7 @@ Details: `V-38682 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38682.rst
 
 V-38680: The audit system must identify staff members to receive notifications of audit log storage volume capacity issues.
 ---------------------------------------------------------------------------------------------------------------------------
@@ -1140,8 +1070,7 @@ Details: `V-38680 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38680.rst
 
 V-38606: The tftp-server package must not be installed unless required.
 -----------------------------------------------------------------------
@@ -1155,8 +1084,7 @@ Details: `V-38606 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38606.rst
 
 V-38605: The cron service must be running.
 ------------------------------------------
@@ -1170,8 +1098,7 @@ Details: `V-38605 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38605.rst
 
 V-38604: The ypbind service must not be running.
 ------------------------------------------------
@@ -1185,8 +1112,7 @@ Details: `V-38604 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38604.rst
 
 V-38603: The ypserv package must not be installed.
 --------------------------------------------------
@@ -1200,8 +1126,7 @@ Details: `V-38603 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38603.rst
 
 V-38601: The system must not send ICMPv4 redirects from any interface.
 ----------------------------------------------------------------------
@@ -1216,8 +1141,7 @@ Details: `V-38601 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38601.rst
 
 V-38600: The system must not send ICMPv4 redirects by default.
 --------------------------------------------------------------
@@ -1232,8 +1156,7 @@ Details: `V-38600 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38600.rst
 
 V-38449: The /etc/gshadow file must have mode 0000.
 ---------------------------------------------------
@@ -1247,8 +1170,7 @@ Details: `V-38449 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38449.rst
 
 V-38448: The /etc/gshadow file must be group-owned by root.
 -----------------------------------------------------------
@@ -1262,8 +1184,7 @@ Details: `V-38448 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38448.rst
 
 V-38609: The TFTP service must not be running.
 ----------------------------------------------
@@ -1277,8 +1198,7 @@ Details: `V-38609 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38609.rst
 
 V-51391: A file integrity baseline must be created.
 ---------------------------------------------------
@@ -1293,8 +1213,7 @@ Details: `V-51391 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-51391.rst
 
 V-38632: The operating system must produce audit records containing sufficient information to establish what type of events occurred.
 -------------------------------------------------------------------------------------------------------------------------------------
@@ -1309,8 +1228,7 @@ Details: `V-38632 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38632.rst
 
 V-38579: The system boot loader configuration file(s) must be owned by root.
 ----------------------------------------------------------------------------
@@ -1323,8 +1241,7 @@ Details: `V-38579 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38579.rst
 
 V-38613: The system must not permit root logins using remote access programs such as ssh.
 -----------------------------------------------------------------------------------------
@@ -1339,8 +1256,7 @@ Details: `V-38613 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38613.rst
 
 V-38574: The system must use a FIPS 140-2 approved cryptographic hashing algorithm for generating account password hashes (system-auth).
 ----------------------------------------------------------------------------------------------------------------------------------------
@@ -1354,8 +1270,7 @@ Details: `V-38574 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38574.rst
 
 V-38577: The system must use a FIPS 140-2 approved cryptographic hashing algorithm for generating account password hashes (libuser.conf).
 -----------------------------------------------------------------------------------------------------------------------------------------
@@ -1369,8 +1284,7 @@ Details: `V-38577 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38577.rst
 
 V-38576: The system must use a FIPS 140-2 approved cryptographic hashing algorithm for generating account password hashes (login.defs).
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -1384,8 +1298,7 @@ Details: `V-38576 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38576.rst
 
 V-38489: A file integrity tool must be installed.
 -------------------------------------------------
@@ -1399,8 +1312,7 @@ Details: `V-38489 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38489.rst
 
 V-38573: The system must disable accounts after three consecutive unsuccessful logon attempts.
 ----------------------------------------------------------------------------------------------
@@ -1414,8 +1326,7 @@ Details: `V-38573 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38573.rst
 
 V-38698: The operating system must employ automated mechanisms to detect the presence of unauthorized software on organizational information systems and notify designated organizational officials in accordance with the organization defined frequency.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1429,8 +1340,7 @@ Details: `V-38698 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38698.rst
 
 V-38519: All rsyslog-generated log files must be group-owned by root.
 ---------------------------------------------------------------------
@@ -1445,8 +1355,7 @@ Details: `V-38519 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38519.rst
 
 V-38518: All rsyslog-generated log files must be owned by root.
 ---------------------------------------------------------------
@@ -1461,8 +1370,7 @@ Details: `V-38518 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38518.rst
 
 V-38517: The Transparent Inter-Process Communication (TIPC) protocol must be disabled unless required.
 ------------------------------------------------------------------------------------------------------
@@ -1476,8 +1384,7 @@ Details: `V-38517 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38517.rst
 
 V-38515: The Stream Control Transmission Protocol (SCTP) must be disabled unless required.
 ------------------------------------------------------------------------------------------
@@ -1491,8 +1398,7 @@ Details: `V-38515 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38515.rst
 
 V-38514: The Datagram Congestion Control Protocol (DCCP) must be disabled unless required.
 ------------------------------------------------------------------------------------------
@@ -1506,8 +1412,7 @@ Details: `V-38514 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38514.rst
 
 V-38691: The Bluetooth service must be disabled.
 ------------------------------------------------
@@ -1523,8 +1428,7 @@ Details: `V-38691 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38691.rst
 
 V-38511: IP forwarding for IPv4 must not be enabled, unless the system is a router.
 -----------------------------------------------------------------------------------
@@ -1539,8 +1443,7 @@ Details: `V-38511 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38511.rst
 
 V-38597: The system must limit the ability of processes to have simultaneous write and execute access to memory.
 ----------------------------------------------------------------------------------------------------------------
@@ -1558,8 +1461,7 @@ Details: `V-38597 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38597.rst
 
 V-38596: The system must implement virtual address space randomization.
 -----------------------------------------------------------------------
@@ -1577,8 +1479,7 @@ Details: `V-38596 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38596.rst
 
 V-38595: The system must be configured to require the use of a CAC, PIV compliant hardware token, or Alternate Logon Token (ALT) for authentication.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1593,8 +1494,7 @@ Details: `V-38595 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38595.rst
 
 V-38593: The Department of Defense (DoD) login banner must be displayed immediately prior to, or as part of, console login prompts.
 -----------------------------------------------------------------------------------------------------------------------------------
@@ -1608,8 +1508,7 @@ Details: `V-38593 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38593.rst
 
 V-38592: The system must require administrator action to unlock an account locked by excessive failed login attempts.
 ---------------------------------------------------------------------------------------------------------------------
@@ -1624,8 +1523,7 @@ Details: `V-38592 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38592.rst
 
 V-38457: The /etc/passwd file must have mode 0644 or less permissive.
 ---------------------------------------------------------------------
@@ -1641,8 +1539,7 @@ Details: `V-38457 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38457.rst
 
 V-38495: Audit log files must be owned by root.
 -----------------------------------------------
@@ -1656,8 +1553,7 @@ Details: `V-38495 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38495.rst
 
 V-38619: There must be no .netrc files on the system.
 -----------------------------------------------------
@@ -1672,8 +1568,7 @@ Details: `V-38619 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38619.rst
 
 V-38599: The FTPS/FTP service on the system must be configured with the Department of Defense (DoD) login banner.
 -----------------------------------------------------------------------------------------------------------------
@@ -1687,8 +1582,7 @@ Details: `V-38599 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38599.rst
 
 V-51337: The system must use a Linux Security Module at boot time.
 ------------------------------------------------------------------
@@ -1703,8 +1597,7 @@ Details: `V-51337 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-51337.rst
 
 V-38585: The system boot loader must require authentication.
 ------------------------------------------------------------
@@ -1719,8 +1612,7 @@ Details: `V-38585 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38585.rst
 
 V-43150: The login user list must be disabled.
 ----------------------------------------------
@@ -1735,8 +1627,7 @@ Details: `V-43150 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-43150.rst
 
 V-57569: The noexec option must be added to the /tmp partition.
 ---------------------------------------------------------------
@@ -1751,8 +1642,7 @@ Details: `V-57569 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-57569.rst
 
 V-38560: The operating system must connect to external networks or information systems only through managed IPv4 interfaces consisting of boundary protection devices arranged in accordance with an organizational security architecture.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1766,8 +1656,7 @@ Details: `V-38560 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38560.rst
 
 V-38444: The systems local IPv6 firewall must implement a deny-all, allow-by-exception policy for inbound packets.
 ------------------------------------------------------------------------------------------------------------------
@@ -1783,8 +1672,7 @@ Details: `V-38444 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38444.rst
 
 V-38504: The /etc/shadow file must have mode 0000.
 --------------------------------------------------
@@ -1801,8 +1689,7 @@ Details: `V-38504 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38504.rst
 
 V-38583: The system boot loader configuration file(s) must have mode 0600 or less permissive.
 ---------------------------------------------------------------------------------------------
@@ -1816,8 +1703,7 @@ Details: `V-38583 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38583.rst
 
 V-38500: The root account must be the only account having a UID of 0.
 ---------------------------------------------------------------------
@@ -1834,8 +1720,7 @@ Details: `V-38500 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38500.rst
 
 V-38501: The system must disable accounts after excessive login failures within a 15-minute interval.
 -----------------------------------------------------------------------------------------------------
@@ -1849,8 +1734,7 @@ Details: `V-38501 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38501.rst
 
 V-38502: The /etc/shadow file must be owned by root.
 ----------------------------------------------------
@@ -1867,8 +1751,7 @@ Details: `V-38502 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38502.rst
 
 V-38503: The /etc/shadow file must be group-owned by root.
 ----------------------------------------------------------
@@ -1882,8 +1765,7 @@ Details: `V-38503 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38503.rst
 
 V-38621: The system clock must be synchronized to an authoritative DoD time source.
 -----------------------------------------------------------------------------------
@@ -1898,8 +1780,7 @@ Details: `V-38621 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38621.rst
 
 V-38620: The system clock must be synchronized continuously, or at least daily.
 -------------------------------------------------------------------------------
@@ -1918,8 +1799,7 @@ Details: `V-38620 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38620.rst
 
 V-38623: All rsyslog-generated log files must have mode 0600 or less permissive.
 --------------------------------------------------------------------------------
@@ -1934,8 +1814,7 @@ Details: `V-38623 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38623.rst
 
 V-38625: If the system is using LDAP for authentication or account information, the system must use a TLS connection using FIPS 140-2 approved cryptographic algorithms.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1950,8 +1829,7 @@ Details: `V-38625 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38625.rst
 
 V-38626: The LDAP client must use a TLS connection using trust certificates signed by the site CA.
 --------------------------------------------------------------------------------------------------
@@ -1966,8 +1844,7 @@ Details: `V-38626 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38626.rst
 
 V-38629: The graphical desktop environment must set the idle timeout to no more than 15 minutes.
 ------------------------------------------------------------------------------------------------
@@ -1981,8 +1858,7 @@ Details: `V-38629 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38629.rst
 
 V-38628: The operating system must produce audit records containing sufficient information to establish the identity of any user/subject associated with the event.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1997,8 +1873,7 @@ Details: `V-38628 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38628.rst
 
 V-38588: The system must not permit interactive boot.
 -----------------------------------------------------
@@ -2012,8 +1887,7 @@ Details: `V-38588 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38588.rst
 
 V-38700: The operating system must provide a near real-time alert when any of the organization defined list of compromise or potential compromise indicators occurs. 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2027,8 +1901,7 @@ Details: `V-38700 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38700.rst
 
 V-38695: A file integrity tool must be used at least weekly to check for unauthorized file changes, particularly the addition of unauthorized system libraries or binaries, or for unauthorized modification to authorized system libraries or binaries.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2042,8 +1915,7 @@ Details: `V-38695 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38695.rst
 
 V-38483: The system package management tool must cryptographically verify the authenticity of system software packages during installation.
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -2058,8 +1930,7 @@ Details: `V-38483 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38483.rst
 
 V-38539: The system must be configured to use TCP syncookies when experiencing a TCP SYN flood.
 -----------------------------------------------------------------------------------------------
@@ -2077,8 +1948,7 @@ Details: `V-38539 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38539.rst
 
 V-38513: The systems local IPv4 firewall must implement a deny-all, allow-by-exception policy for inbound packets.
 ------------------------------------------------------------------------------------------------------------------
@@ -2094,8 +1964,7 @@ Details: `V-38513 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38513.rst
 
 V-38532: The system must not accept ICMPv4 secure redirect packets by default.
 ------------------------------------------------------------------------------
@@ -2110,8 +1979,7 @@ Details: `V-38532 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38532.rst
 
 V-38512: The operating system must prevent public IPv4 access into an organizations internal networks, except as appropriately mediated by managed interfaces employing boundary protection devices.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2125,8 +1993,7 @@ Details: `V-38512 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38512.rst
 
 V-38439: The system must provide automated support for account management functions.
 ------------------------------------------------------------------------------------
@@ -2144,8 +2011,7 @@ Details: `V-38439 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38439.rst
 
 V-38638: The graphical desktop environment must have automatic lock enabled.
 ----------------------------------------------------------------------------
@@ -2160,8 +2026,7 @@ Details: `V-38638 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38638.rst
 
 V-38636: The system must retain enough rotated audit logs to cover the required log retention period.
 -----------------------------------------------------------------------------------------------------
@@ -2176,8 +2041,7 @@ Details: `V-38636 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38636.rst
 
 V-38637: The system package management tool must verify contents of all files associated with the audit package.
 ----------------------------------------------------------------------------------------------------------------
@@ -2192,8 +2056,7 @@ Details: `V-38637 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38637.rst
 
 V-38634: The system must rotate audit log files that reach the maximum file size.
 ---------------------------------------------------------------------------------
@@ -2210,8 +2073,7 @@ Details: `V-38634 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38634.rst
 
 V-38696: The operating system must employ automated mechanisms, per organization defined frequency, to detect the addition of unauthorized components/devices into the operating system.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2225,8 +2087,7 @@ Details: `V-38696 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38696.rst
 
 V-38633: The system must set a maximum audit log file size.
 -----------------------------------------------------------
@@ -2241,8 +2102,7 @@ Details: `V-38633 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38633.rst
 
 V-38586: The system must require authentication upon booting into single-user and maintenance modes.
 ----------------------------------------------------------------------------------------------------
@@ -2257,8 +2117,7 @@ Details: `V-38586 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38586.rst
 
 V-38631: The operating system must employ automated mechanisms to facilitate the monitoring and control of remote access methods.
 ---------------------------------------------------------------------------------------------------------------------------------
@@ -2273,8 +2132,7 @@ Details: `V-38631 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38631.rst
 
 V-38615: The SSH daemon must be configured with the Department of Defense (DoD) login banner.
 ---------------------------------------------------------------------------------------------
@@ -2290,8 +2148,7 @@ Details: `V-38615 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38615.rst
 
 V-38622: Mail relaying must be restricted.
 ------------------------------------------
@@ -2306,8 +2163,7 @@ Details: `V-38622 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38622.rst
 
 V-38617: The SSH daemon must be configured to use only FIPS 140-2 approved ciphers.
 -----------------------------------------------------------------------------------
@@ -2321,8 +2177,7 @@ Details: `V-38617 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38617.rst
 
 V-38611: The SSH daemon must ignore .rhosts files.
 --------------------------------------------------
@@ -2336,5 +2191,4 @@ Details: `V-38611 in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/V-38611.rst

@@ -46,7 +46,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'openstack-ansible'
+project = 'openstack-ansible-security'
 copyright = '2015, openstack-ansible contributors'
 author = 'openstack-ansible contributors'
 

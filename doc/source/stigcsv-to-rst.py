@@ -23,8 +23,7 @@ Details: `{{ id }} in STIG Viewer`_.
 
 Developer Notes
 ~~~~~~~~~~~~~~~
-This security hardening configuration is not yet implemented in
-openstack-ansible-security.
+.. include:: developer-notes/{{ id }}.rst
 
 """
 
