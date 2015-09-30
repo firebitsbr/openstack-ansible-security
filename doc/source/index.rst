@@ -34,6 +34,7 @@ Table of Contents
    :maxdepth: 2
 
    getting-started.rst
+   writing-docs.rst
    configurations.rst
 
 
