@@ -1,0 +1,33 @@
+---
+
+- name: V-38632 - The operating system must produce audit records (install auditd)
+  apt:
+    name: auditd
+    state: latest
+    cache_valid_time: 3600
+    update_cache: yes
+  tags:
+    - auditd
+    - cat2
+    - V-38632
+
+- name: V-38632 - The operating system must produce audit records (start auditd)
+  service:
+    name: auditd
+    state: started
+    enabled: true
+  tags:
+    - auditd
+    - cat2
+    - V-38632
+
+- name: V-38650 - Auditd must audit loading/unloading of kernel modules
+  copy:
+    src: V-38580-kernel_module.rules
+    dest: /etc/audit/rules.d/
+  notify:
+    - generate auditd rules
+  tags:
+    - auditd
+    - cat2
+    - V-38650

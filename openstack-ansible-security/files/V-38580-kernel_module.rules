@@ -1,0 +1,10 @@
+# Added by openstack-security-ansible
+# Required by V-38580 in RHEL 6 STIG
+#
+# These rules will cause loading/unloading of kernel modules to be audited
+#
+-w /sbin/insmod -p x -k modules
+-w /sbin/rmmod -p x -k modules
+-w /sbin/modprobe -p x -k modules
+-a always,exit -F arch=b32 -S init_module -S delete_module -k modules
+-a always,exit -F arch=b64 -S init_module -S delete_module -k modules
