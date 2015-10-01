@@ -39,3 +39,15 @@
     - cat1
     - V-38614
 
+- name: V-38612 Medium  The SSH daemon must not allow host-based authentication
+  lineinfile:
+    state: present
+    dest: /etc/ssh/sshd_config
+    regexp: '^(#)?HostbasedAuthentication'
+    line: 'HostbasedAuthentication no'
+  notify: 
+    - restart ssh
+  tags:
+    - ssh
+    - cat2
+    - V-38612
