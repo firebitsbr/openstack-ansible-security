@@ -16,4 +16,5 @@
   - include: apt.yml
   - include: auditd.yml
   - include: auth.yml
+  - include: console.yml
   - include: sshd.yml
