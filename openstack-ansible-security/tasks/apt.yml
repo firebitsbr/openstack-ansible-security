@@ -21,6 +21,7 @@
 - name: Gather current GPG keys for apt (for V-38476)
   command: apt-key list
   register: v38476_result
+  changed_when: "v38476_result.rc != 0"
 
 - name: V-38476 - Vendor-provided cryptographic certificates must be installed to verify the integrity of system software.
   debug:
