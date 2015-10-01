@@ -67,6 +67,17 @@
     - cat3
     - V-38635
 
+- name: V-38538 - Auditd must audit account termination
+  copy:
+    src: V-38538-account_termination.rules
+    dest: /etc/audit/rules.d/
+  notify:
+    - generate auditd rules
+  tags:
+    - auditd
+    - cat3
+    - V-38538
+
 - name: V-38471 - Forward auditd records to syslog
   lineinfile:
     dest: /etc/audisp/plugins.d/syslog.conf
