@@ -13,11 +13,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-  - include: apt.yml
-  - include: auditd.yml
-  - include: auth.yml
-  - include: console.yml
-  - include: sshd.yml
-  - include: file_perms.yml
-  - include: services.yml
-  - include: nfsd.yml
+# Generate a list of services
+- stat: path=/etc/exports
+  register: exports_exists
+  always_run: yes
+  tags:
+    - cat1
+    - cat2
+    - cat3
+
+- name: V-38677 - The NFS server must not have the insecure file locking option enabled.
+  when: exports_exists.stat.exists == True
+  replace:
+    dest: /etc/exports
+    regexp: 'insecure_locks'
+  tags:
+    - cat1
+    - V-38677
+    - nfs
