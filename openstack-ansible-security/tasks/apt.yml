@@ -44,6 +44,7 @@
   command: grep -r AllowUnauthenticated /etc/apt/apt.conf.d/
   register: v38462_result
   failed_when: "'No such file' in v38462_result.stderr"
+  changed_when: "v38462_result.rc == 0"
   tags:
     - auth
     - cat1
