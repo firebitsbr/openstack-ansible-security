@@ -1,0 +1,2 @@
+Audit rules are added in a task so that any events associated with the loading
+or unloading of a kernel module are logged.

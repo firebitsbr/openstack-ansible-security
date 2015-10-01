@@ -17,3 +17,6 @@
   service:
     name: ssh
     state: restarted
+
+- name: generate auditd rules
+  command: augenrules --load
