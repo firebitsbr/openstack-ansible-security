@@ -13,10 +13,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-  - include: apt.yml
-  - include: auditd.yml
-  - include: auth.yml
-  - include: console.yml
-  - include: sshd.yml
-  - include: file_perms.yml
-  - include: services.yml
+- name: "V-38641 - The atd service must be disabled.\n V-38640  -The Automatic Bug Reporting Tool (abrtd) service must not be running\n"
+  service:
+    name: {{ item.name }}
+    state: {{ item.state }}
+    enabled: {{ item.enabled }}
+  when: "'{{ item.name }}' in sysv_services.stdout_lines"
+  with_items: services
+  tags:
+  - cat3
+  - V-38640
+  - abrtd
+  - V-38641
+  - atd
