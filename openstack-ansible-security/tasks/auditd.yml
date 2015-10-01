@@ -1,6 +1,6 @@
 ---
 
-- name: V-38632 - The operating system must produce audit records (install auditd)
+- name: V-38631/38632 - The operating system must produce audit records (install auditd)
   apt:
     name: auditd
     state: latest
@@ -10,8 +10,9 @@
     - auditd
     - cat2
     - V-38632
+    - V-38631
 
-- name: V-38632 - The operating system must produce audit records (start auditd)
+- name: V-38631/38632 - The operating system must produce audit records (start auditd)
   service:
     name: auditd
     state: started
@@ -20,6 +21,7 @@
     - auditd
     - cat2
     - V-38632
+    - V-38631
 
 - name: V-38650 - Auditd must audit loading/unloading of kernel modules
   copy:
