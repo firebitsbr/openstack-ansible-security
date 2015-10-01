@@ -3,7 +3,11 @@ Security hardening for openstack-ansible
 
 **--- Currently a work in progress ---**
 
-What is this? 
+Documentation is on `ReadTheDocs`_ temporarily.
+
+.. _ReadTheDocs: http://openstack-ansible-security.readthedocs.org/en/latest/
+
+What is this?
 ~~~~~~~~~~~~~
 
 The goal of this Ansible role is to provide additional security for deployments of openstack-ansible, the OpenStack project which deploys a fully-functional OpenStack environment using Ansible roles.  For a more detailed explanation, review the security hardening spec in the section below.
