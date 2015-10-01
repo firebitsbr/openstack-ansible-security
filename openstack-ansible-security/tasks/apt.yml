@@ -13,6 +13,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Notes for V-38476 ###########################################################
+#
+# These GPG keys are valid as of Ubuntu 14.04 in late 2015, but they could
+# change or additional keys may be added in the future.
+#
 - name: Gather current GPG keys for apt (for V-38476)
   command: apt-key list
   register: v38476_result
@@ -25,3 +30,29 @@
     - apt
     - cat1
     - V-38476
+
+# Notes for V-38462 ###########################################################
+#
+# Ubuntu checks packages against GPG signatures by default.  It can be turned
+# off for all package installations by a setting in /etc/apt/apt.conf.d and we
+# search for that here.  Users can pass an argument on the apt command line
+# to bypass the checks as well, but that's outside the scope of this check
+# and remediation.
+#
+- name: Search for AllowUnauthenticated in /etc/apt/apt.conf.d/ (for V-38462)
+  command: grep -r AllowUnauthenticated /etc/apt/apt.conf.d/
+  register: v38462_result
+  failed_when: "'No such file' in v38462_result.stderr"
+  tags:
+    - auth
+    - cat1
+    - V-38462
+
+- name: V-38462 - Package management tool must verify authenticity of packages
+  debug:
+    msg: "FAILED: Remove AllowUnauthenticated from files in /etc/apt/apt.conf.d/ to ensure packages are verified."
+  when: "v38462_result.rc == 0"
+  tags:
+    - auth
+    - cat1
+    - V-38462
