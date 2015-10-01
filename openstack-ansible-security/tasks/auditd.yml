@@ -45,6 +45,17 @@
     - cat3
     - V-38563
 
+- name: V-38635 - Auditd must audit system time changes
+  copy:
+    src: V-38635-alter_time.rules
+    dest: /etc/audit/rules.d/
+  notify:
+    - generate auditd rules
+  tags:
+    - auditd
+    - cat3
+    - V-38635
+
 - name: V-38471 - Forward auditd records to syslog
   lineinfile:
     dest: /etc/audisp/plugins.d/syslog.conf

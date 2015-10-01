@@ -1,0 +1,2 @@
+-a always,exit -F arch=b32 -S adjtimex -k audit_time_rules
+-a always,exit -F arch=b64 -S adjtimex -k audit_time_rules
