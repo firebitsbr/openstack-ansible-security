@@ -45,6 +45,17 @@
     - cat3
     - V-38563
 
+- name: V-38545 - Auditd must audit DAC permission modifications via chown
+  copy:
+    src: V-38545-DAC_modifications_chown.rules
+    dest: /etc/audit/rules.d/
+  notify:
+    - generate auditd rules
+  tags:
+    - auditd
+    - cat3
+    - V-38545
+
 - name: V-38635 - Auditd must audit system time changes
   copy:
     src: V-38635-alter_time.rules
