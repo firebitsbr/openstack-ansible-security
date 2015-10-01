@@ -34,6 +34,17 @@
     - cat2
     - V-38650
 
+- name: V-38563 - Auditd must audit DAC permission modifications
+  copy:
+    src: V-38563-DAC_modifications.rules
+    dest: /etc/audit/rules.d/
+  notify:
+    - generate auditd rules
+  tags:
+    - auditd
+    - cat3
+    - V-38563
+
 - name: V-38471 - Forward auditd records to syslog
   lineinfile:
     dest: /etc/audisp/plugins.d/syslog.conf
