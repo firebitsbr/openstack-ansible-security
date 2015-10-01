@@ -38,3 +38,15 @@
     - ssh
     - cat1
     - V-38614
+
+- name: V-38607 - The SSH daemon must be configured to use only the SSHv2 protocol
+  lineinfile:
+    state: present
+    dest: /etc/ssh/sshd_config
+    regexp: '^(#)?Protocol \d' line='Protocol 2'
+  notify:
+    - restart ssh
+  tags:
+    - ssh
+    - cat1
+    - V-38607
