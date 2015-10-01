@@ -31,3 +31,16 @@
     - auditd
     - cat2
     - V-38650
+
+- name: V-38471 - Forward auditd records to syslog
+  lineinfile:
+    dest: /etc/audisp/plugins.d/syslog.conf
+    regexp: "^(#)?active"
+    line: "active = yes"
+    state: present
+  notify:
+    - restart auditd
+  tags:
+    - auditd
+    - cat3
+    - V-38471

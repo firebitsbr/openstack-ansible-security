@@ -20,3 +20,8 @@
 
 - name: generate auditd rules
   command: augenrules --load
+
+- name: restart auditd
+  service:
+    name: auditd
+    state: restarted
