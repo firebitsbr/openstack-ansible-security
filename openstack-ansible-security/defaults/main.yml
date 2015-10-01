@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-services:
+cat3_services:
   - name: abrtd
     state: stopped
     enabled: no

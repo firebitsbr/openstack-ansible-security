@@ -13,16 +13,27 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- name: "V-38641 - The atd service must be disabled.\n V-38640  -The Automatic Bug Reporting Tool (abrtd) service must not be running\n"
-  service:
-    name: {{ item.name }}
-    state: {{ item.state }}
-    enabled: {{ item.enabled }}
-  when: "'{{ item.name }}' in sysv_services.stdout_lines"
-  with_items: services
+# Generate a list of services
+- name: Generate list of sysv_services
+  shell: "chkconfig --list | sed '/^$/ d ; /xinetd based services:/ d ; /^\t/ d' | awk '{print $1}'"
+  register: sysv_services
+  changed_when: false
+  always_run: yes
   tags:
-  - cat3
-  - V-38640
-  - abrtd
-  - V-38641
-  - atd
+    - cat1
+    - cat2
+    - cat3
+
+- name: "V-38641 - The atd service must be disabled.\n V-38640 - The Automatic Bug Reporting Tool (abrtd) service must not be running\n"
+  service:
+    name: "{{ item.name }}"
+    state: "{{ item.state }}"
+    enabled: "{{ item.enabled }}"
+  when: "'{{ item.name }}' in sysv_services.stdout_lines"
+  with_items: cat3_services
+  tags:
+    - cat3
+    - V-38640
+    - abrtd
+    - V-38641
+    - atd
