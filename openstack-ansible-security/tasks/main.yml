@@ -16,3 +16,4 @@
   - include: apt.yml
   - include: auth.yml
   - include: sshd.yml
+  - include: file_perms.yml
