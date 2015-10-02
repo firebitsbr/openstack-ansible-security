@@ -22,6 +22,16 @@ cat3_services:
     state: stopped
     enabled: no
 
+## Disabling services
+# The STIG recommends ensuring that some services are running if no services
+# utilizing it are enabled.  Setting a boolean to 'yes' here will ensure that
+# a service isn't actively running and will not be started after boot-up.
+# Setting a 'no' will ensure that this Ansible role does not alter the service
+# in any way from its current configuration.
+#
+disable_services:
+  xinetd: yes                                     # V-38582
+
 ## Removing services
 # The STIG recommends ensuring that some services aren't installed at any time.
 # Those services are listed here.  Setting a boolean here to 'yes' wiil

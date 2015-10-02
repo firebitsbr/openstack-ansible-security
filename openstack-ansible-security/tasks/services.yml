@@ -37,3 +37,24 @@
     - abrtd
     - V-38641
     - atd
+
+- name: Check if xinetd installed (for V-38582)
+  shell: dpkg --status xinetd
+  register: v38582_result
+  changed_when: "v38582_result.rc > 1"
+  failed_when: "v38582_result.rc > 1"
+  tags:
+    - services
+    - cat2
+    - V-38582
+
+- name: V-38582 - xinetd must be disabled if not in use
+  service:
+    name: xinetd
+    state: stopped
+    enabled: no
+  when: disable_services['xinetd'] | bool and v38582_result.rc == 0
+  tags:
+    - services
+    - cat2
+    - V-38582
