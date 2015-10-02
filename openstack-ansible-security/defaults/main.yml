@@ -34,3 +34,4 @@ auditd_rules:
   filesystem_mounts: yes
   kernel_modules: yes
   setuid_setgid: yes
+  sudoers: yes
