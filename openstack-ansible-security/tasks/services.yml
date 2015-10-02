@@ -99,3 +99,24 @@
     - services
     - cat2
     - V-38606
+
+- name: Check if avahi is installed (for V-38616)
+  shell: dpkg --status avahi-daemon
+  register: v38618_result
+  changed_when: v38618_result.rc == 0
+  failed_when: v38618_result.rc > 1
+  tags:
+    - services
+    - cat3
+    - V-38618
+
+- name: V-38618 - avahi must be disabled
+  service:
+    name: avahi-daemon
+    state: stopped
+    enabled: no
+  when: disable_services['avahi'] | bool and v38618_result.rc == 0
+  tags:
+    - services
+    - cat3
+    - V-38618

@@ -20,6 +20,7 @@
   - include: console.yml
   - include: file_perms.yml
   - include: kernel.yml
+  - include: misc.yml
   - include: nfsd.yml
   - include: services.yml
   - include: sshd.yml

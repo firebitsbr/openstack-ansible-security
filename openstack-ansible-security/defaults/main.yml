@@ -30,6 +30,7 @@ cat3_services:
 # in any way from its current configuration.
 #
 disable_services:
+  avahi: yes                                      # V-31618
   ypbind: yes                                     # V-38604
   xinetd: yes                                     # V-38582
 
