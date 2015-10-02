@@ -29,6 +29,7 @@ auditd_rules:
   change_system_time: yes                         # V-38635
   DAC_chmod: yes                                  # V-38543
   DAC_chown: yes                                  # V-38545
+  DAC_lchown: yes                                 # V-38558
   DAC_fchmod: yes                                 # V-38547
   DAC_fchmodat: yes                               # V-38550
   DAC_fchown: yes                                 # V-38552

@@ -101,6 +101,15 @@
 -a always,exit -F arch=b64 -S fsetxattr -F auid=0 -k perm_mod
 {% endif %}
 
+{% if auditd_rules['DAC_lchown'] | bool %}
+# RHEL 6 STIG V-38558
+# Audits DAC changes via lchown
+-a always,exit -F arch=b32 -S lchown -F auid>=500 -F auid!=4294967295 -k perm_mod
+-a always,exit -F arch=b32 -S lchown -F auid=0 -k perm_mod
+-a always,exit -F arch=b64 -S lchown -F auid>=500 -F auid!=4294967295 -k perm_mod
+-a always,exit -F arch=b64 -S lchown -F auid=0 -k perm_mod
+{% endif %}
+
 {% if auditd_rules['DAC_lremovexattr'] | bool %}
 # RHEL 6 STIG V-38559
 # Audits DAC changes via lremovexattr
