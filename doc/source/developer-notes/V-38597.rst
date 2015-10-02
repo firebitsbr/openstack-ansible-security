@@ -3,6 +3,6 @@ Memory (NX) support and it is enabled by default.  There's not an option
 to enable or disable it.
 
 For more information, refer to `Ubuntu's security feature documentation on
-NX`.
+NX`_.
 
 .. _Ubuntu's security feature documentation on NX: https://wiki.ubuntu.com/Security/Features#nx
