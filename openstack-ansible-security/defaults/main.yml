@@ -23,16 +23,15 @@ cat3_services:
     enabled: no
 
 auditd_rules:
-  account_modification: yes
+  account_modification: yes                       # V-38531, V-38534, V-38538
   change_localtime: yes                           # V-38530
-  change_system_time: yes
-  DAC_chmod: yes
-  DAC_chown: yes
-  DAC_lsetxattr: yes
-  DAC_setxattr: yes
-  deletions: yes
-  failed_access: yes
-  filesystem_mounts: yes
-  kernel_modules: yes
-  setuid_setgid: yes
-  sudoers: yes
+  change_system_time: yes                         # V-38635
+  DAC_chmod: yes                                  # V-38543
+  DAC_chown: yes                                  # V-38545
+  DAC_lsetxattr: yes                              # V-38561
+  DAC_setxattr: yes                               # V-38565
+  deletions: yes                                  # V-38575
+  failed_access: yes                              # V-38566
+  filesystem_mounts: yes                          # V-38568
+  kernel_modules: yes                             # V-38580
+  sudoers: yes                                    # V-38578
