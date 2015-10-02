@@ -124,3 +124,14 @@
     - ssh
     - cat2
     - V-38615
+
+- name: V-38616 - The ssh daemon must not permit user environment settings
+  lineinfile:
+    state: present
+    dest: /etc/ssh/sshd_config
+    regexp: '^(#)?PermitUserEnvironment'
+    line: 'PermitUserEnvironment no'
+  tags:
+    - ssh
+    - cat3
+    - V-38616
