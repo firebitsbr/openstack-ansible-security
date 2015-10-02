@@ -23,61 +23,17 @@
     - V-38632
     - V-38631
 
-- name: V-38650 - Auditd must audit loading/unloading of kernel modules
-  copy:
-    src: V-38580-kernel_module.rules
-    dest: /etc/audit/rules.d/
-  notify:
-    - generate auditd rules
-  tags:
-    - auditd
-    - cat2
-    - V-38650
+- debug: var=auditd_rules
 
-- name: V-38563 - Auditd must audit DAC permission modifications
-  copy:
-    src: V-38563-DAC_modifications.rules
-    dest: /etc/audit/rules.d/
+- name: Auditd rules (includes several STIGs)
+  template:
+    src: osas-auditd.j2
+    dest: /etc/audit/rules.d/osas-auditd.rules
   notify:
     - generate auditd rules
   tags:
     - auditd
     - cat3
-    - V-38563
-
-- name: V-38545 - Auditd must audit DAC permission modifications via chown
-  copy:
-    src: V-38545-DAC_modifications_chown.rules
-    dest: /etc/audit/rules.d/
-  notify:
-    - generate auditd rules
-  tags:
-    - auditd
-    - cat3
-    - V-38545
-
-- name: V-38635 - Auditd must audit system time changes
-  copy:
-    src: V-38635-alter_time.rules
-    dest: /etc/audit/rules.d/
-  notify:
-    - generate auditd rules
-  tags:
-    - auditd
-    - cat3
-    - V-38635
-
-- name: V-38538/38534 - Auditd must audit account modification/termination
-  copy:
-    src: V-38538-account_termination.rules
-    dest: /etc/audit/rules.d/
-  notify:
-    - generate auditd rules
-  tags:
-    - auditd
-    - cat3
-    - V-38538
-    - V-38534
 
 - name: V-38471 - Forward auditd records to syslog
   lineinfile:

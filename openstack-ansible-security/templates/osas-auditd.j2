@@ -1,0 +1,44 @@
+{% if auditd_rules['account_modification'] | bool %}
+# RHEL 6 STIG V-38534 and V-38538
+# Audits account modifications and terminations
+-w /etc/group -p wa -k audit_account_changes
+-w /etc/passwd -p wa -k audit_account_changes
+-w /etc/gshadow -p wa -k audit_account_changes
+-w /etc/shadow -p wa -k audit_account_changes
+-w /etc/security/opasswd -p wa -k audit_account_changes
+{% endif %}
+
+{% if auditd_rules['DAC_chmod'] | bool %}
+# RHEL 6 STIG V-38545
+# Audits DAC changes via chmod
+-a always,exit -F arch=b32 -S removexattr -F auid>=500 -F auid!=4294967295 -k perm_mod
+-a always,exit -F arch=b32 -S removexattr -F auid=0 -k perm_mod
+-a always,exit -F arch=b64 -S removexattr -F auid>=500 -F auid!=4294967295 -k perm_mod
+-a always,exit -F arch=b64 -S removexattr -F auid=0 -k perm_mod
+{% endif %}
+
+{% if auditd_rules['DAC_chown'] | bool %}
+# RHEL 6 STIG V-38545
+# Audits DAC changes via chown
+-a always,exit -F arch=b32 -S chown -F auid>=500 -F auid!=4294967295 -k perm_mod
+-a always,exit -F arch=b32 -S chown -F auid=0 -k perm_mod
+-a always,exit -F arch=b64 -S chown -F auid>=500 -F auid!=4294967295 -k perm_mod
+-a always,exit -F arch=b64 -S chown -F auid=0 -k perm_mod
+{% endif %}
+
+{% if auditd_rules['kernel_modules'] | bool %}
+# RHEL 6 STIG V-38580
+# Audits kernel module loading/unloading
+-w /sbin/insmod -p x -k modules
+-w /sbin/rmmod -p x -k modules
+-w /sbin/modprobe -p x -k modules
+-a always,exit -F arch=b32 -S init_module -S delete_module -k modules
+-a always,exit -F arch=b64 -S init_module -S delete_module -k modules
+{% endif %}
+
+{% if auditd_rules['change_system_time'] | bool %}
+# RHEL 6 STIG V-38635
+# Audits system time changes
+-a always,exit -F arch=b32 -S adjtimex -k audit_time_rules
+-a always,exit -F arch=b64 -S adjtimex -k audit_time_rules
+{% endif %}

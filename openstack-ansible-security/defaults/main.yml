@@ -21,3 +21,10 @@ cat3_services:
   - name: atd
     state: stopped
     enabled: no
+
+auditd_rules:
+  account_modification: yes
+  change_system_time: yes
+  DAC_chmod: yes
+  DAC_chown: yes
+  kernel_modules: yes
