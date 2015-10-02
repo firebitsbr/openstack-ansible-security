@@ -58,3 +58,13 @@
     - services
     - cat2
     - V-38582
+
+- name: V-38584 - xinetd must be uninstalled if not in use
+  apt:
+    name: xinetd
+    state: absent
+  when: remove_services['xinetd'] | bool
+  tags:
+    - services
+    - cat3
+    - V-38584

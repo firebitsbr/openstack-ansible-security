@@ -41,6 +41,7 @@ disable_services:
 remove_services:
   rsh-server: yes                                 # V-38591
   telnet_server: yes                              # V-38587
+  xinetd: yes                                     # V-38584
 
 ## Additional rules for auditd
 # The following booleans control the rule sets added to auditd's default
