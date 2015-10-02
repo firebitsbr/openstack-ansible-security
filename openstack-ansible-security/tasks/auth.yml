@@ -74,3 +74,13 @@
     - auth
     - cat1
     - V-38591
+
+- name: V-38587 - Remove telnet-server
+  apt:
+    name: telnetd
+    state: absent
+  when: remove_services['telnet_server'] | bool
+  tags:
+    - auth
+    - cat1
+    - V-38587
