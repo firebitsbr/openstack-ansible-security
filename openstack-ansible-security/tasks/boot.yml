@@ -1,0 +1,10 @@
+---
+
+- name: V-38581 - Bootloader configuration files must be group-owned by root
+  file:
+    path: /boot/grub/grub.cfg
+    group: root
+  tags:
+    - boot
+    - cat2
+    - V-38581

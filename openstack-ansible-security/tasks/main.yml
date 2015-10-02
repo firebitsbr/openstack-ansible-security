@@ -16,6 +16,7 @@
   - include: apt.yml
   - include: auditd.yml
   - include: auth.yml
+  - include: boot.yml
   - include: console.yml
   - include: sshd.yml
   - include: file_perms.yml
