@@ -13,7 +13,7 @@
 {% endif %}
 
 {% if auditd_rules['DAC_chmod'] | bool %}
-# RHEL 6 STIG V-38545
+# RHEL 6 STIG V-38543
 # Audits DAC changes via chmod
 -a always,exit -F arch=b32 -S removexattr -F auid>=500 -F auid!=4294967295 -k perm_mod
 -a always,exit -F arch=b32 -S removexattr -F auid=0 -k perm_mod
