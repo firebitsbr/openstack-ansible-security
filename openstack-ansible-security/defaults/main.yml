@@ -29,6 +29,7 @@ auditd_rules:
   DAC_chown: yes
   DAC_lsetxattr: yes
   DAC_setxattr: yes
+  deletions: yes
   failed_access: yes
   filesystem_mounts: yes
   kernel_modules: yes
