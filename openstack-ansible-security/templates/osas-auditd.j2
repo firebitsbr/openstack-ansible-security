@@ -12,6 +12,16 @@
 -w /etc/security/opasswd -p wa -k audit_account_changes
 {% endif %}
 
+{% if auditd_rules['network_changes'] | bool %}
+# RHEL 6 STIG V-38540
+# Audits network configuration changes
+-a always,exit -F arch=ARCH -S sethostname -S setdomainname -k audit_network_modifications
+-w /etc/issue -p wa -k audit_network_modifications
+-w /etc/issue.net -p wa -k audit_network_modifications
+-w /etc/hosts -p wa -k audit_network_modifications
+-w /etc/network -p wa -k audit_network_modifications
+{% endif %}
+
 {% if auditd_rules['apparmor_changes'] | bool %}
 # RHEL 6 STIG V-38541
 # Audits changes to AppArmor policies
