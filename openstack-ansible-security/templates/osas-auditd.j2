@@ -56,6 +56,15 @@
 -a always,exit -F arch=b64 -S fchmod -F auid=0 -k perm_mod
 {% endif %}
 
+{% if auditd_rules['DAC_fchmodat'] | bool %}
+# RHEL 6 STIG V-38550
+# Audits DAC changes via fchmodat
+-a always,exit -F arch=b32 -S fchmodat -F auid>=500 -F auid!=4294967295 -k perm_mod
+-a always,exit -F arch=b32 -S fchmodat -F auid=0 -k perm_mod
+-a always,exit -F arch=b64 -S fchmodat -F auid>=500 -F auid!=4294967295 -k perm_mod
+-a always,exit -F arch=b64 -S fchmodat -F auid=0 -k perm_mod
+{% endif %}
+
 {% if auditd_rules['DAC_fchown'] | bool %}
 # RHEL 6 STIG V-38552
 # Audits DAC changes via fchown
