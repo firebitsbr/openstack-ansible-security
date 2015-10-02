@@ -104,3 +104,23 @@
     - ssh
     - cat2
     - V-38613
+
+- name: Copy the login banner for sshd (for V-38615)
+  copy:
+    src: login_banner.txt
+    dest: /etc/issue.net
+  tags:
+    - ssh
+    - cat2
+    - V-38615
+
+- name: V-38615 - The ssh daemon must display a login banner
+  lineinfile:
+    state: present
+    dest: /etc/ssh/sshd_config
+    regexp: '^(#)?Banner'
+    line: 'Banner /etc/issue.net'
+  tags:
+    - ssh
+    - cat2
+    - V-38615
