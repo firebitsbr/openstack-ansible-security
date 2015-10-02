@@ -13,13 +13,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-  - include: apt.yml
-  - include: auditd.yml
-  - include: auth.yml
-  - include: boot.yml
-  - include: console.yml
-  - include: file_perms.yml
-  - include: kernel.yml
-  - include: nfsd.yml
-  - include: services.yml
-  - include: sshd.yml
+# This is the default in Ubuntu 14.04
+- name: V-38596 - Enable virtual address space randomization
+  sysctl:
+    name: kernel.randomize_va_space
+    value: 2
+    state: present
+    sysctl_set: yes
+  tags:
+    - kernel
+    - cat2
+    - V-38596
