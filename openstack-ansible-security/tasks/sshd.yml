@@ -45,7 +45,21 @@
     dest: /etc/ssh/sshd_config
     regexp: '^(#)?HostbasedAuthentication'
     line: 'HostbasedAuthentication no'
-  notify: 
+  notify:
+    - restart ssh
+  tags:
+    - ssh
+    - cat2
+    - V-38612
+
+
+- name: V-38608 - Set a timeout interval for idle ssh sessions
+  lineinfile:
+    state: present
+    dest: /etc/ssh/sshd_config
+    regexp: '^(#)?ClientAliveInterval'
+    line: 'ClientAliveInterval {{ ssh_client_alive_interval }}'
+  notify:
     - restart ssh
   tags:
     - ssh
