@@ -81,3 +81,11 @@ auditd_rules:
   kernel_modules: yes                             # V-38580
   network_changes: yes                            # V-38540
   sudoers: yes                                    # V-38578
+
+## SSH configuration
+# The following configuration items will adjust how the ssh daemon is
+# configured.  The recommendations from the RHEL 6 STIG are shown below, but
+# they can be adjusted to fit a particular environment.
+#
+# V-38608 - Set a 15 minute time out for SSH sessions if there is no activity
+ssh_client_alive_interval: 900
