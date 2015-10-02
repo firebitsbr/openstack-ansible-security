@@ -84,3 +84,22 @@
     - auth
     - cat1
     - V-38587
+
+- name: Search /etc/passwd for password hashes (for V-38499)
+  shell: "awk -F: '($2 != \"x\") {print}' /etc/passwd | wc -l"
+  register: v38499_result
+  changed_when: "v38499_result.stdout != '0'"
+  failed_when: "'No such file' in v38499_result.stderr"
+  tags:
+    - auth
+    - cat2
+    - V-38499
+
+- name: V-38499 - The /etc/passwd file must not contain password hashes
+  debug:
+    msg: "FAILED: Remove password hashes from /etc/password to remediate"
+  when: "v38499_result.stdout != '0'"
+  tags:
+    - auth
+    - cat2
+    - V-38499
