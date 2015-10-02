@@ -24,6 +24,7 @@ cat3_services:
 
 auditd_rules:
   account_modification: yes
+  change_localtime: yes                           # V-38530
   change_system_time: yes
   DAC_chmod: yes
   DAC_chown: yes
