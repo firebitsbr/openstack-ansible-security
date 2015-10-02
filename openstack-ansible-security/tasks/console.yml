@@ -23,3 +23,12 @@
     - console
     - cat1
     - V-38668
+
+- name: V-38593 - Display a login banner for console prompts
+  copy:
+    src: login_banner.txt
+    dest: /etc/issue.net
+  tags:
+    - console
+    - cat2
+    - V-38593
