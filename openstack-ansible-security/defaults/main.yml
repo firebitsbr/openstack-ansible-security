@@ -39,6 +39,7 @@ disable_services:
 # boolean to 'no' means that the playbook will not alter the service.
 #
 remove_services:
+  ypserv: yes                                     # V-38603
   rsh-server: yes                                 # V-38591
   telnet_server: yes                              # V-38587
   xinetd: yes                                     # V-38584

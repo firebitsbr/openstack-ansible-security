@@ -68,3 +68,13 @@
     - services
     - cat3
     - V-38584
+
+# Ubuntu's equivalent of Red Hat's ypserv package is 'nis'
+- name: V-38603 - Remove ypserv (nis) package
+  apt:
+    name: nis
+    state: absent
+  tags:
+    - services
+    - cat2
+    - V-38603
