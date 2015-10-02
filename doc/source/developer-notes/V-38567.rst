@@ -1,0 +1,1 @@
+Rules are added to auditd for logging the use of setuid and setgid.

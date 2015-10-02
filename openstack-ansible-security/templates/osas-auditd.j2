@@ -35,6 +35,12 @@
 -a always,exit -F arch=b64 -S lsetxattr -F auid=0 -k perm_mod
 {% endif %}
 
+{% if auditd_rules['setuid_setgid'] | bool %}
+# RHEL 6 STIG V-38567
+# Auditds setuid/setgid
+-a always,exit -F path=[SETUID_PROG_PATH] -F perm=x -F auid>=500 -F auid!=4294967295 -k privileged
+{% endif %}
+
 {% if auditd_rules['DAC_setxattr'] | bool %}
 # RHEL 6 STIG V-38565
 # Audits DAC changes via setxattr
