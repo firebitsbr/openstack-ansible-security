@@ -103,3 +103,30 @@
     - auth
     - cat2
     - V-38499
+
+- name: V-38450 - The /etc/passwd file must be owned by root
+  file:
+    path: /etc/passwd
+    owner: root
+  tags:
+    - auth
+    - cat2
+    - V-38450
+
+- name: V-38451 - The /etc/passwd file must be group-owned by root
+  file:
+    path: /etc/passwd
+    group: root
+  tags:
+    - auth
+    - cat2
+    - V-38451
+
+- name: V38457 - The /etc/passwd file must have mode 0644 or less permissive
+  file:
+    path: /etc/passwd
+    mode: 0644
+  tags:
+    - auth
+    - cat2
+    - V-38457
