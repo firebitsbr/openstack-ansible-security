@@ -35,12 +35,6 @@
 -a always,exit -F arch=b64 -S lsetxattr -F auid=0 -k perm_mod
 {% endif %}
 
-{% if auditd_rules['setuid_setgid'] | bool %}
-# RHEL 6 STIG V-38567
-# Auditds setuid/setgid
--a always,exit -F path=[SETUID_PROG_PATH] -F perm=x -F auid>=500 -F auid!=4294967295 -k privileged
-{% endif %}
-
 {% if auditd_rules['DAC_setxattr'] | bool %}
 # RHEL 6 STIG V-38565
 # Audits DAC changes via setxattr
@@ -57,6 +51,19 @@
 -a always,exit -F arch=ARCH -S creat -S open -S openat -S truncate -S ftruncate -F exit=-EPERM -F auid>=500 -F auid!=4294967295 -k access
 -a always,exit -F arch=ARCH -S creat -S open -S openat -S truncate -S ftruncate -F exit=-EACCES -F auid=0 -k access
 -a always,exit -F arch=ARCH -S creat -S open -S openat -S truncate -S ftruncate -F exit=-EPERM -F auid=0 -k access
+{% endif %}
+
+{% if auditd_rules['setuid_setgid'] | bool %}
+# RHEL 6 STIG V-38567
+# Auditds setuid/setgid
+-a always,exit -F path=[SETUID_PROG_PATH] -F perm=x -F auid>=500 -F auid!=4294967295 -k privileged
+{% endif %}
+
+{% if auditd_rules['filesystem_mounts'] | bool %}
+# RHEL 6 STIG V-38568
+# Audits filesystem mounts
+-a always,exit -F arch=ARCH -S mount -F auid>=500 -F auid!=4294967295 -k export
+-a always,exit -F arch=ARCH -S mount -F auid=0 -k export
 {% endif %}
 
 {% if auditd_rules['kernel_modules'] | bool %}

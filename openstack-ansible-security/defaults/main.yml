@@ -30,4 +30,6 @@ auditd_rules:
   DAC_lsetxattr: yes
   DAC_setxattr: yes
   failed_access: yes
+  filesystem_mounts: yes
   kernel_modules: yes
+  setuid_setgid: yes
