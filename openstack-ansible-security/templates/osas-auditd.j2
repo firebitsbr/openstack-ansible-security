@@ -35,6 +35,15 @@
 -a always,exit -F arch=b64 -S setxattr -F auid=0 -k perm_mod
 {% endif %}
 
+{% if auditd_rules['failed_access'] | bool %}
+# RHEL 6 STIG V-38566
+# Audits failed attempts to access files and programs
+-a always,exit -F arch=ARCH -S creat -S open -S openat -S truncate -S ftruncate -F exit=-EACCES -F auid>=500 -F auid!=4294967295 -k access
+-a always,exit -F arch=ARCH -S creat -S open -S openat -S truncate -S ftruncate -F exit=-EPERM -F auid>=500 -F auid!=4294967295 -k access
+-a always,exit -F arch=ARCH -S creat -S open -S openat -S truncate -S ftruncate -F exit=-EACCES -F auid=0 -k access
+-a always,exit -F arch=ARCH -S creat -S open -S openat -S truncate -S ftruncate -F exit=-EPERM -F auid=0 -k access
+{% endif %}
+
 {% if auditd_rules['kernel_modules'] | bool %}
 # RHEL 6 STIG V-38580
 # Audits kernel module loading/unloading
