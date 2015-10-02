@@ -35,3 +35,32 @@
     - auth
     - cat1
     - V-38497
+
+- name: Check if /etc/hosts.equiv exists (for V-38491)
+  stat:
+    path: /etc/hosts.equiv
+  register: v38491_equiv_check
+  changed_when: v38491_equiv_check.stat.exists == True
+  tags:
+    - auth
+    - cat1
+    - V-38491
+
+- name: Check if root has a .rhosts file (for V-38491)
+  stat:
+    path: /root/.rhosts
+  register: v38491_rhosts_check
+  changed_when: v38491_rhosts_check.stat.exists == True
+  tags:
+    - auth
+    - cat1
+    - V-38491
+
+- name: V-38491 - No .rhosts or hosts.equiv present on system
+  debug:
+    msg: "FAILED: Remove all .rhosts and hosts.equiv files"
+  when: v38491_equiv_check.stat.exists == True or v38491_rhosts_check.stat.exists == True
+  tags:
+    - auth
+    - cat1
+    - V-38491
