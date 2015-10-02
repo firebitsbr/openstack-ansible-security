@@ -1,3 +1,10 @@
+{% if auditd_rules['clock_stime'] | bool %}
+# RHEL 6 STIG V-38525
+# Audits changes to system time via stime
+-a always,exit -F arch=b32 -S stime -k audit_time_rules
+-a always,exit -F arch=b64 -S adjtimex -S settimeofday -S clock_settime -k audit_time_rules
+{% endif %}
+
 {% if auditd_rules['clock_settime'] | bool %}
 # RHEL 6 STIG V-38527
 # Audits changes to system time via clock_settime
