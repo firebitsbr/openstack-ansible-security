@@ -78,3 +78,13 @@
     - services
     - cat2
     - V-38603
+
+- name: V-38605 - The cron service must be running
+  service:
+    name: cron
+    state: started
+    enabled: yes
+  tags:
+    - services
+    - cat2
+    - V-38605
