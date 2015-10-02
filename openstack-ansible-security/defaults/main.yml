@@ -33,6 +33,7 @@ auditd_rules:
   DAC_fchmodat: yes                               # V-38550
   DAC_fchown: yes                                 # V-38552
   DAC_fremovexattr: yes                           # V-38556
+  DAC_fsetxattr: yes                              # V-38557
   DAC_lsetxattr: yes                              # V-38561
   DAC_setxattr: yes                               # V-38565
   deletions: yes                                  # V-38575

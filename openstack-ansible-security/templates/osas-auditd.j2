@@ -83,6 +83,15 @@
 -a always,exit -F arch=b64 -S fremovexattr -F auid=0 -k perm_mod
 {% endif %}
 
+{% if auditd_rules['DAC_fsetxattr'] | bool %}
+# RHEL 6 STIG V-38557
+# Audits DAC changes via fsetxattr
+-a always,exit -F arch=b32 -S fsetxattr -F auid>=500 -F auid!=4294967295 -k perm_mod
+-a always,exit -F arch=b32 -S fsetxattr -F auid=0 -k perm_mod
+-a always,exit -F arch=b64 -S fsetxattr -F auid>=500 -F auid!=4294967295 -k perm_mod
+-a always,exit -F arch=b64 -S fsetxattr -F auid=0 -k perm_mod
+{% endif %}
+
 {% if auditd_rules['DAC_lsetxattr'] | bool %}
 # RHEL 6 STIG V-38561
 # Audits DAC changes via lsetxattr
