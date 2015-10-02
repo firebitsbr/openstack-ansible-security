@@ -135,3 +135,14 @@
     - ssh
     - cat3
     - V-38616
+
+- name: V-38617 - The ssh daemon must be configured to use approved ciphers
+  lineinfile:
+    state: present
+    dest: /etc/ssh/sshd_config
+    regexp: '^(#)?Ciphers'
+    line: 'Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc'
+  tags:
+    - ssh
+    - cat2
+    - V-38617
