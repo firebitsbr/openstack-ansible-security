@@ -91,3 +91,7 @@ auditd_rules:
 ssh_client_alive_interval: 900
 # V-38610 - Timeout ssh sessions as soon as ClientAliveInterval is reached once
 ssh_client_alive_count_max: 0
+# V-38613 - The ssh daemon must not permit root logins
+# Deviation from the STIG due to operational requirements in openstack-ansible.
+# See documentation for V-38613 for more details.
+ssh_permit_root_login: 'yes'

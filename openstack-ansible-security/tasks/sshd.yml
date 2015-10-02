@@ -91,3 +91,16 @@
     - ssh
     - cat2
     - V-38611
+
+- name: V-38613 - The ssh daemon must not permit root logins
+  lineinfile:
+    state: present
+    dest: /etc/ssh/sshd_config
+    regexp: '^(#)?PermitRootLogin'
+    line: 'PermitRootLogin {{ ssh_permit_root_login }}'
+  notify:
+    - restart ssh
+  tags:
+    - ssh
+    - cat2
+    - V-38613
