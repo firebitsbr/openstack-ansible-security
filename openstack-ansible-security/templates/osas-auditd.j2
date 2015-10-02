@@ -1,4 +1,13 @@
+{% if auditd_rules['clock_settime'] | bool %}
+# RHEL 6 STIG V-38527
+# Audits changes to system time via clock_settime
+-a always,exit -F arch=b32 -S clock_settime -k audit_time_rules
+-a always,exit -F arch=b64 -S clock_settime -k audit_time_rules
+{% endif %}
+
 {% if auditd_rules['change_localtime'] | bool %}
+# RHEL 6 STIG V-38530
+# Audits clock changes made via /etc/localtime
 -w /etc/localtime -p wa -k audit_time_rules
 {% endif %}
 

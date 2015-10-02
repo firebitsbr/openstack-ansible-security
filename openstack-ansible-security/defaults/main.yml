@@ -27,6 +27,7 @@ auditd_rules:
   apparmor_changes: yes                           # V-38541
   change_localtime: yes                           # V-38530
   change_system_time: yes                         # V-38635
+  clock_settime: yes                              # V-38527
   DAC_chmod: yes                                  # V-38543
   DAC_chown: yes                                  # V-38545
   DAC_lchown: yes                                 # V-38558
