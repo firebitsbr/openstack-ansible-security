@@ -22,6 +22,24 @@ cat3_services:
     state: stopped
     enabled: no
 
+## Removing services
+# The STIG recommends ensuring that some services aren't installed at any time.
+# Those services are listed here.  Setting a boolean here to 'yes' wiil
+# ensure that the STIG is followed and the service is removed.  Setting a
+# boolean to 'no' means that the playbook will not alter the service.
+#
+remove_services:
+  rsh-server: yes                                 # V-38591
+
+## Additional rules for auditd
+# The following booleans control the rule sets added to auditd's default
+# set of auditing rules.  To see which rules will be added for each boolean,
+# refer to the templates/osas-auditd.j2 file.
+#
+# If the template changes due to booleans being adjusted, the new template
+# will be deployed onto the host and auditd will get the new rules loaded
+# automatically with augenrules.
+#
 auditd_rules:
   account_modification: yes                       # V-38531, V-38534, V-38538
   apparmor_changes: yes                           # V-38541

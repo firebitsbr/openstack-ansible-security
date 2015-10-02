@@ -64,3 +64,13 @@
     - auth
     - cat1
     - V-38491
+
+- name: V-38591 - Remove rshd
+  apt:
+    name: rsh-server
+    state: absent
+  when: remove_services['rsh-server'] | bool
+  tags:
+    - auth
+    - cat1
+    - V-38591
