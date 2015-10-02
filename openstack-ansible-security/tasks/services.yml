@@ -74,6 +74,7 @@
   apt:
     name: nis
     state: absent
+  when: remove_services['ypserv'] | bool
   tags:
     - services
     - cat2
@@ -88,3 +89,13 @@
     - services
     - cat2
     - V-38605
+
+- name: V-38606 - The tftp-server package must not be installed unless required
+  apt:
+    name: tftpd
+    state: absent
+  when: remove_services['tftp-server'] | bool
+  tags:
+    - services
+    - cat2
+    - V-38606

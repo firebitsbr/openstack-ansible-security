@@ -43,6 +43,7 @@ remove_services:
   ypserv: yes                                     # V-38603
   rsh-server: yes                                 # V-38591
   telnet_server: yes                              # V-38587
+  tftp-server: yes                                # V-38606
   xinetd: yes                                     # V-38584
 
 ## Additional rules for auditd
