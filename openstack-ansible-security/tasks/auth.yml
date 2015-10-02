@@ -19,6 +19,7 @@
 - name: V-38497 - The system must not have accounts configured with blank or null passwords.
   command: grep nullok /etc/pam.d/common-auth
   register: v38497_result
+  changed_when: v38497_result.rc != 0
   failed_when: "'No such file' in v38497_result.stderr"
   tags:
     - auth
