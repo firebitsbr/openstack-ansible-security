@@ -64,4 +64,17 @@
   tags:
     - ssh
     - cat2
-    - V-38612
+    - V-38608
+
+- name: V-38610 - Set a timeout count on idle ssh sessions
+  lineinfile:
+    state: present
+    dest: /etc/ssh/sshd_config
+    regexp: '^(#)?ClientAliveCountMax'
+    line: 'ClientAliveCountMax {{ ssh_client_alive_count_max }}'
+  notify:
+    - restart ssh
+  tags:
+    - ssh
+    - cat2
+    - V-38610

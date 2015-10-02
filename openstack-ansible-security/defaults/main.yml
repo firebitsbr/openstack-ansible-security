@@ -89,3 +89,5 @@ auditd_rules:
 #
 # V-38608 - Set a 15 minute time out for SSH sessions if there is no activity
 ssh_client_alive_interval: 900
+# V-38610 - Timeout ssh sessions as soon as ClientAliveInterval is reached once
+ssh_client_alive_count_max: 0
