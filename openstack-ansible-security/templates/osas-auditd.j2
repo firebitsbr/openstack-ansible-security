@@ -12,6 +12,12 @@
 -w /etc/security/opasswd -p wa -k audit_account_changes
 {% endif %}
 
+{% if auditd_rules['apparmor_changes'] | bool %}
+# RHEL 6 STIG V-38541
+# Audits changes to AppArmor policies
+-w /etc/apparmor/ -p wa -k MAC-policy
+{% endif %}
+
 {% if auditd_rules['DAC_chmod'] | bool %}
 # RHEL 6 STIG V-38543
 # Audits DAC changes via chmod
