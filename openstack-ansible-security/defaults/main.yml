@@ -27,4 +27,5 @@ auditd_rules:
   change_system_time: yes
   DAC_chmod: yes
   DAC_chown: yes
+  DAC_setxattr: yes
   kernel_modules: yes

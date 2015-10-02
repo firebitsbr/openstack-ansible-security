@@ -23,8 +23,6 @@
     - V-38632
     - V-38631
 
-- debug: var=auditd_rules
-
 - name: Auditd rules (includes several STIGs)
   template:
     src: osas-auditd.j2
