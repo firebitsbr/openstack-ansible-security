@@ -78,3 +78,16 @@
     - ssh
     - cat2
     - V-38610
+
+- name: V-38611 - The sshd daemon must ignore .rhosts files
+  lineinfile:
+    state: present
+    dest: /etc/ssh/sshd_config
+    regexp: '^(#)?IgnoreRhosts'
+    line: 'IgnoreRhosts yes'
+  notify:
+    - restart ssh
+  tags:
+    - ssh
+    - cat2
+    - V-38611
