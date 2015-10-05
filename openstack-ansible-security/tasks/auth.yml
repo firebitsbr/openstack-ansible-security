@@ -35,6 +35,17 @@
     - cat2
     - V-38477
 
+- name: V-38479 - Set maximum age for passwords
+  lineinfile:
+    dest: /etc/login.defs
+    regexp: "^(#)?PASS_MAX_DAYS"
+    line: "PASS_MAX_DAYS {{ password_maximum_days }}"
+  when: password_maximum_days is defined
+  tags:
+    - auth
+    - cat2
+    - V-38479
+
 # RHEL 6 keeps this content in /etc/pam.d/system-auth, but Ubuntu keeps it in
 # /etc/pam.d/common-auth
 - name: V-38497 - The system must not have accounts configured with blank or null passwords.

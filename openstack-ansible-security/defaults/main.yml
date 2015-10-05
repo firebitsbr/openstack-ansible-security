@@ -143,3 +143,6 @@ space_left_action: SYSLOG                         # V-38470
 # To set the minimum number of days between password changes, uncomment
 # the password_minimum_days variable below.  The STIG recommendation is 1 day.
 #password_minimum_days: 1                         # V-38477
+# V-38479 - There is no age limit on password by default in Ubuntu. Uncomment
+# line below to use the STIG recommendation of 60 days.
+#password_maximum_days: 60                        # V-38479
