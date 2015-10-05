@@ -111,3 +111,8 @@ allowed_ntp_subnets:
   - 10/8
   - 192.168/16
   - 172.16/12
+
+## Mail configuration
+# Configuring an email address here will cause hosts to forward the root user's
+# email to another address.
+#root_forward_email: user@example.com

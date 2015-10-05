@@ -37,3 +37,6 @@
 # Miscellaneous ##############################################################
 - name: generate auditd rules
   command: augenrules --load
+
+- name: rehash aliases
+  command: newaliases
