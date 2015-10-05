@@ -133,3 +133,9 @@ disk_full_action: SYSLOG                          # V-38468
 # Review the documentation for V-38470 before changing this option.
 # **DANGER**
 space_left_action: SYSLOG                         # V-38470
+
+## Authentication
+# V-38475 - There is no password length requirement by default in Ubuntu
+# 14.04. To set a password length requirement, uncomment
+# password_minimum_length below. The STIG recommendation is 14 characters.
+#password_minimum_length: 14                      # V-38475

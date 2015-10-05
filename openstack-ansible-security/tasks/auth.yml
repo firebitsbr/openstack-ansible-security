@@ -13,6 +13,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+- name: V-38475 - Set minimum length for passwords
+  lineinfile:
+    dest: /etc/login.defs
+    regexp: "^(#)?PASS_MIN_LEN"
+    line: "PASS_MIN_LEN {{ password_minimum_length }}"
+  when: password_minimum_length is defined
+  tags:
+    - auth
+    - cat2
+    - V-38475
 
 # RHEL 6 keeps this content in /etc/pam.d/system-auth, but Ubuntu keeps it in
 # /etc/pam.d/common-auth
