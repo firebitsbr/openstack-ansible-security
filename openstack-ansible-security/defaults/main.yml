@@ -123,3 +123,8 @@ allowed_ntp_subnets:
 # documentation for V-38464 before changing this option.
 # **DANGER**
 disk_error_action: SYSLOG                         # V-38464
+# **DANGER**
+# Set an action to occur when the disk is full. Review the documentation for
+# V-38468 before changing this option.
+# **DANGER**
+disk_full_action: SYSLOG                          # V-38468
