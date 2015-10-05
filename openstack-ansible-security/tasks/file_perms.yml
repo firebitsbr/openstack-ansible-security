@@ -32,9 +32,9 @@
     - V-38448
 
 - name: V-38445 - Audit log files must be group-owned by root
-  file:
-    dest: /var/log/audit/*
-    group: root
+  shell: chown root /var/log/audit/*
+  register: v38445_result
+  changed_when: v38445_result.rc != 0
   tags:
     - file_perms
     - cat2
