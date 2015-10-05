@@ -1,5 +1,13 @@
 ---
 
+- name: Install AIDE
+  apt:
+    name: aide
+    state: latest
+  tags:
+    - cat2
+    - V-38489
+
 - name: Search for .netrc files (for V-38619)
   shell: find /root /home -xdev -name .netrc | wc -l
   register: v38619_result
