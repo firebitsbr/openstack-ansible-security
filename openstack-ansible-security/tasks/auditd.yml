@@ -14,9 +14,10 @@
 # limitations under the License.
 
 - name: V-38445 - Audit log files must be group-owned by root
-  shell: chown :root /var/log/audit/*
-  register: v38445_result
-  changed_when: v38445_result.rc != 0
+  file:
+    dest: /var/log/audit/
+    owner: root
+    recurse: true
   tags:
     - auditd
     - cat2
@@ -59,9 +60,10 @@
     - V-38470
 
 - name: V-38495 - Audit log files must be owned by root
-  shell: chown root /var/log/audit/*
-  register: v38495_result
-  changed_when: v38495_result.rc != 0
+  file:
+    dest: /var/log/audit/
+    group: root
+    recurse: true
   tags:
     - auditd
     - cat2
