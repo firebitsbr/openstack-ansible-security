@@ -149,3 +149,7 @@ space_left_action: SYSLOG                         # V-38470
 # V-38480 - To warn users before their password expires, uncomment the line
 # below and they will be warned 7 days prior (following the STIG).
 #password_warn_age: 7                             # V-38480
+
+## Kernel modules
+# V-38490 - Set the line below to yes to disable usb-storage
+disable_usb_storage: no
