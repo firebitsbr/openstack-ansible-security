@@ -118,5 +118,8 @@ allowed_ntp_subnets:
 #root_forward_email: user@example.com
 
 ## Auditd configuration
-# Set an action to occur when there is a disk error
-disk_error_action: SYSLOG
+# **DANGER**
+# Set an action to occur when there is a disk error. Review the
+# documentation for V-38464 before changing this option.
+# **DANGER**
+disk_error_action: SYSLOG                         # V-38464
