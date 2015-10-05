@@ -54,8 +54,16 @@
     dest: /etc/group
     owner: root
     group: root
-    mode: 0644
   tags:
     - file_perms
     - cat2
     - V-38459
+
+- name: V-38461 - The /etc/group file must have mode 0644 or less
+  file:
+    dest: /etc/group
+    mode: 0644
+  tags:
+    - file_perms
+    - cat2
+    - V-38461
