@@ -13,68 +13,55 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- name: Check if autofs is installed (for V-38437)
-  shell: dpkg --status autofs | grep ^Status | grep installed
-  register: v38437_result
-  changed_when: v38437_result.rc > 1
-  failed_when: v38437_result.rc > 1
+- name: Generate list of sysv_services
+  shell: "chkconfig --list | sed '/^$/ d ; /xinetd based services:/ d ; /^\t/ d' | awk '{print $1}'"
+  register: sysv_services
+  changed_when: false
   tags:
     - services
+    - cat1
+    - cat2
     - cat3
-    - V-38437
 
 - name: V-38437 - Automated file system mounting tools must be disabled
   service:
     name: autofs
     state: stopped
     enabled: no
-  when: disable_services['autofs'] | bool and v38437_result.rc == 0
+  when: disable_services['autofs'] | bool and 'autofs' in sysv_services.stdout
   tags:
     - services
     - cat3
     - V-38437
 
-# Generate a list of services
-- name: Generate list of sysv_services
-  shell: "chkconfig --list | sed '/^$/ d ; /xinetd based services:/ d ; /^\t/ d' | awk '{print $1}'"
-  register: sysv_services
-  changed_when: false
-  always_run: yes
-  tags:
-    - cat1
-    - cat2
-    - cat3
-
-- name: "V-38641 - The atd service must be disabled.\n V-38640 - The Automatic Bug Reporting Tool (abrtd) service must not be running\n"
+- name: V-38641 - The atd service must be disabled
   service:
-    name: "{{ item.name }}"
-    state: "{{ item.state }}"
-    enabled: "{{ item.enabled }}"
-  when: "'{{ item.name }}' in sysv_services.stdout_lines"
-  with_items: cat3_services
-  tags:
-    - cat3
-    - V-38640
-    - abrtd
-    - V-38641
-    - atd
-
-- name: Check if xinetd installed (for V-38582)
-  shell: dpkg --status xinetd
-  register: v38582_result
-  changed_when: "v38582_result.rc > 1"
-  failed_when: "v38582_result.rc > 1"
+    name: atd
+    state: stopped
+    enabled: no
+  when: disable_services['atd'] | bool and 'atd' in sysv_services.stdout
   tags:
     - services
-    - cat2
-    - V-38582
+    - cat3
+    - V-38641
+
+- name: V-38640 - The abrt service must be disabled
+  service:
+    name: abrtd
+    state: stopped
+    enabled: no
+  when: disable_services['abrtd'] | bool and 'abrtd' in sysv_services.stdout
+  tags:
+    - services
+    - cat3
+    - V-38640
 
 - name: V-38582 - xinetd must be disabled if not in use
   service:
     name: xinetd
     state: stopped
     enabled: no
-  when: disable_services['xinetd'] | bool and v38582_result.rc == 0
+  when: disable_services['xinetd'] | bool and 'xinetd' in sysv_services.stdout
   tags:
     - services
     - cat2
@@ -121,22 +108,12 @@
     - cat2
     - V-38606
 
-- name: Check if avahi is installed (for V-38616)
-  shell: dpkg --status avahi-daemon
-  register: v38618_result
-  changed_when: v38618_result.rc == 0
-  failed_when: v38618_result.rc > 1
-  tags:
-    - services
-    - cat3
-    - V-38618
-
 - name: V-38618 - avahi must be disabled
   service:
     name: avahi-daemon
     state: stopped
     enabled: no
-  when: disable_services['avahi'] | bool and v38618_result.rc == 0
+  when: disable_services['avahi'] | bool and 'avahi' in sysv_services.stdout
   tags:
     - services
     - cat3
