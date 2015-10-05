@@ -13,6 +13,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+- name: V-38445 - Audit log files must be group-owned by root
+  shell: chown :root /var/log/audit/*
+  register: v38445_result
+  changed_when: v38445_result.rc != 0
+  tags:
+    - auditd
+    - cat2
+    - V-38445
+
 - name: V-38464 - The audit system must take action for disk errors
   lineinfile:
     dest: /etc/audit/auditd.conf
@@ -48,6 +57,15 @@
     - auditd
     - cat2
     - V-38470
+
+- name: V-38495 - Audit log files must be owned by root
+  shell: chown root /var/log/audit/*
+  register: v38495_result
+  changed_when: v38495_result.rc != 0
+  tags:
+    - auditd
+    - cat2
+    - V-38495
 
 - name: V-38631/38632 - The operating system must produce audit records (install auditd)
   apt:
