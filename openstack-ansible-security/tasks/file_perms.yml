@@ -13,8 +13,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+- name: V-38443 - The /etc/gshadow file must be owned by root
+  file:
+    dest: /etc/gshadow
+    owner: root
+  tags:
+    - file_perms
+    - cat2
+    - V-38443
+
 - name: V-38459 - The /etc/group file must be group-owned by root
-  file: dest=/etc/group owner=root group=root mode=0644
+  file:
+    dest: /etc/group
+    owner: root
+    group: root
+    mode: 0644
   tags:
     - file_perms
     - cat2
