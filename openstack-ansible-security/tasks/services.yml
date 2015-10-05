@@ -13,6 +13,27 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+- name: Check if autofs is installed (for V-38437)
+  shell: dpkg --status autofs | grep ^Status | grep installed
+  register: v38437_result
+  changed_when: v38437_result.rc > 1
+  failed_when: v38437_result.rc > 1
+  tags:
+    - services
+    - cat3
+    - V-38437
+
+- name: V-38437 - Automated file system mounting tools must be disabled
+  service:
+    name: autofs
+    state: stopped
+    enabled: no
+  when: disable_services['autofs'] | bool and v38437_result.rc == 0
+  tags:
+    - services
+    - cat3
+    - V-38437
+
 # Generate a list of services
 - name: Generate list of sysv_services
   shell: "chkconfig --list | sed '/^$/ d ; /xinetd based services:/ d ; /^\t/ d' | awk '{print $1}'"
