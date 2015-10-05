@@ -22,6 +22,15 @@
     - cat2
     - V-38443
 
+- name: V-38445 - Audit log files must be group-owned by root
+  file:
+    dest: /var/log/audit/*
+    group: root
+  tags:
+    - file_perms
+    - cat2
+    - V-38445
+
 - name: V-38459 - The /etc/group file must be group-owned by root
   file:
     dest: /etc/group
