@@ -146,3 +146,6 @@ space_left_action: SYSLOG                         # V-38470
 # V-38479 - There is no age limit on password by default in Ubuntu. Uncomment
 # line below to use the STIG recommendation of 60 days.
 #password_maximum_days: 60                        # V-38479
+# V-38480 - To warn users before their password expires, uncomment the line
+# below and they will be warned 7 days prior (following the STIG).
+#password_warn_age: 7                             # V-38480

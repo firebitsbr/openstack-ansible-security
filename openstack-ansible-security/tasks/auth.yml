@@ -46,6 +46,17 @@
     - cat2
     - V-38479
 
+- name: V-38480 - Warn users prior to password expiration
+  lineinfile:
+    dest: /etc/login.defs
+    regexp: "^(#)?PASS_WARN_DAYS"
+    line: "PASS_WARN_DAYS {{ password_warn_age }}"
+  when: password_warn_age is defined
+  tags:
+    - auth
+    - cat3
+    - V-38480
+
 # RHEL 6 keeps this content in /etc/pam.d/system-auth, but Ubuntu keeps it in
 # /etc/pam.d/common-auth
 - name: V-38497 - The system must not have accounts configured with blank or null passwords.
