@@ -116,3 +116,7 @@ allowed_ntp_subnets:
 # Configuring an email address here will cause hosts to forward the root user's
 # email to another address.
 #root_forward_email: user@example.com
+
+## Auditd configuration
+# Set an action to occur when there is a disk error
+disk_error_action: SYSLOG
