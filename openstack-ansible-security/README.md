@@ -1,38 +1,39 @@
-Role Name
-=========
+openstack-ansible-security
+==========================
 
-A brief description of the role goes here.
+The goal of the openstack-ansible-security role is to improve security within [openstack-ansible](https://github.com/openstack/openstack-ansible) deployments. The role is based on the [Security Technical Implementation Guide (STIG)](http://iase.disa.mil/stigs/Pages/index.aspx) for [Red Hat Enterprise Linux 6](https://www.stigviewer.com/stig/red_hat_enterprise_linux_6/).
 
 Requirements
 ------------
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+This role can be used with or without the openstack-ansible role. It requires
+Ansible 1.8 at a minimum.
 
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+All of the variables for this role are in `defaults/main.yml`.
 
 Dependencies
 ------------
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+This role has no dependencies.
 
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+Using the role is fairly straightforward:
 
     - hosts: servers
       roles:
-         - { role: username.rolename, x: 42 }
+         - openstack-ansible-security
 
 License
 -------
 
-BSD
+Apache 2.0
 
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+For more information, join `#openstack-ansible` on Freenode.
