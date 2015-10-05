@@ -128,3 +128,8 @@ disk_error_action: SYSLOG                         # V-38464
 # V-38468 before changing this option.
 # **DANGER**
 disk_full_action: SYSLOG                          # V-38468
+# **DANGER**
+# Set an action to occur when the disk is approaching its capacity.
+# Review the documentation for V-38470 before changing this option.
+# **DANGER**
+space_left_action: SYSLOG                         # V-38470

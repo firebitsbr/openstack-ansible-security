@@ -37,6 +37,18 @@
     - cat2
     - V-38468
 
+- name: V-38470 - The audit system must take action when the disk is almost full
+  lineinfile:
+    dest: /etc/audit/auditd.conf
+    regexp: "^(#)?space_left_action"
+    line: "space_left_action = {{ space_left_action }}"
+  notify:
+    - restart auditd
+  tags:
+    - auditd
+    - cat2
+    - V-38470
+
 - name: V-38631/38632 - The operating system must produce audit records (install auditd)
   apt:
     name: auditd
