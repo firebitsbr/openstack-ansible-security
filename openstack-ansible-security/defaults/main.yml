@@ -139,3 +139,7 @@ space_left_action: SYSLOG                         # V-38470
 # 14.04. To set a password length requirement, uncomment
 # password_minimum_length below. The STIG recommendation is 14 characters.
 #password_minimum_length: 14                      # V-38475
+# V-38477 - There is no password change limitation set by default in Ubuntu.
+# To set the minimum number of days between password changes, uncomment
+# the password_minimum_days variable below.  The STIG recommendation is 1 day.
+#password_minimum_days: 1                         # V-38477
