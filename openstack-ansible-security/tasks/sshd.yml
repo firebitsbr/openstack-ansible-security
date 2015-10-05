@@ -13,6 +13,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+- name: V-38484 - User must get date/time of last successful login
+  lineinfile:
+    state: present
+    dest: /etc/ssh/sshd_config
+    regexp: '^(#)?PrintLastLog'
+    line: 'PrintLastLog yes'
+  notify:
+    - restart ssh
+  tags:
+    - ssh
+    - cat2
+    - V-38484
+
 - name: V-38607 - The SSH daemon must be configured to use only the SSHv2 protocol
   lineinfile:
     state: present
@@ -51,7 +64,6 @@
     - ssh
     - cat2
     - V-38612
-
 
 - name: V-38608 - Set a timeout interval for idle ssh sessions
   lineinfile:
