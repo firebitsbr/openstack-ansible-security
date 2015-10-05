@@ -67,3 +67,13 @@
     - file_perms
     - cat2
     - V-38461
+
+- name: V-38493 - Audit log directories must have mode 0755 or less
+  file:
+    dest: /var/log/audit/
+    state: directory
+    mode: 0750
+  tags:
+    - file_perms
+    - cat2
+    - V-38493
