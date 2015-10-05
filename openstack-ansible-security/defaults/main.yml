@@ -96,3 +96,17 @@ ssh_client_alive_count_max: 0
 # Deviation from the STIG due to operational requirements in openstack-ansible.
 # See documentation for V-38613 for more details.
 ssh_permit_root_login: 'yes'
+
+## Chrony configuration
+# Adjust the following NTP servers if necessary.
+ntp_servers:
+  - 0.north-america.pool.ntp.org
+  - 1.north-america.pool.ntp.org
+  - 2.north-america.pool.ntp.org
+  - 3.north-america.pool.ntp.org
+# Chrony limits access to clients that are on certain subnets.  Adjust the
+# following subnets here to limit client access to chrony servers.
+allowed_ntp_subnets:
+  - 10/8
+  - 192.168/16
+  - 172.16/12

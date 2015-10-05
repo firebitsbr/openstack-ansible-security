@@ -13,20 +13,27 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- name: restart ssh
-  service:
-    name: ssh
-    state: restarted
-
-- name: generate auditd rules
-  command: augenrules --load
-
+# Restarting services ########################################################
 - name: restart auditd
   service:
     name: auditd
+    state: restarted
+
+- name: restart chrony
+  service:
+    name: chrony
+    state: restarted
+
+- name: restart ssh
+  service:
+    name: ssh
     state: restarted
 
 - name: restart vsftpd
   service:
     name: vsftpd
     state: restarted
+
+# Miscellaneous ##############################################################
+- name: generate auditd rules
+  command: augenrules --load

@@ -16,3 +16,30 @@
   tags:
     - cat2
     - V-38619
+
+- name: V-38620 - Synchronize system clock (installing chrony)
+  apt:
+    name: chrony
+    state: latest
+  tags:
+    - cat2
+    - V-38620
+
+- name: V-38620 - Synchronize system clock (enable chrony)
+  service:
+    name: chrony
+    state: started
+    enabled: yes
+  tags:
+    - cat2
+    - V-38620
+
+- name: V-38620 - Synchronize system clock (configuration file)
+  template:
+    src: chrony.conf.j2
+    dest: /etc/chrony/chrony.conf
+  notify:
+    - restart chrony
+  tags:
+    - cat2
+    - V38620
